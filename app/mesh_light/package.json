@@ -1,0 +1,23 @@
+{
+    "name": "mesh_base_test",
+    "description": "mesh_base_test",
+    "version": "1.1",
+    "ic":"tlsr825x",
+    "hardware":"TYBT3L",
+    "build":{
+        "log":"0",
+        "oem":"0",
+        "json_config":"0"
+    },
+    "product":{
+        "kind":"sig_mesh_light",
+        "pid":"33lnzacq",
+        "vendorid":"2000",
+        "power_reset_cnt":"5",
+        "power_reset_time":"5",
+        "power_reset_recover_time":"600",
+        "local_control":"0"
+    },
+    "modules":{
+    }
+}
