@@ -1,223 +1,223 @@
-|ç‰ˆæœ¬|ä¸»è¦å˜æ›´|æ—¶é—´|
+|°æ±¾|Ö÷Òª±ä¸ü|Ê±¼ä|
 |:--:|--|:--:|
-|V1.0|é¦–ç‰ˆ|2020/12/10|
+|V1.0|Ê×°æ|2020/12/10|
 
-# æ³¨æ„äº‹é¡¹
-## æ§åˆ¶å‘½ä»¤
-    a)ä¸è®¸æ”¹å˜å‘½ä»¤åŸæœ‰å«ä¹‰
-    b)ä¸è®¸ç§è‡ªå¢åŠ å‘½ä»¤,å¦‚éœ€å¢åŠ ,éœ€ä¸æ¶‚é¸¦åå•†æŠ¥å¤‡
+# ×¢ÒâÊÂÏî
+## ¿ØÖÆÃüÁî
+    a)²»Ğí¸Ä±äÃüÁîÔ­ÓĞº¬Òå
+    b)²»ĞíË½×ÔÔö¼ÓÃüÁî,ÈçĞèÔö¼Ó,ĞèÓëÍ¿Ñ»Ğ­ÉÌ±¨±¸
 
-# æ¡†æ¶ä»‹ç»
+# ¿ò¼Ü½éÉÜ
 
-# DPç‚¹ä»‹ç»
-## meshæ ‡å‡†å‘½ä»¤
-    äº‘ç«¯æŸ¥çœ‹è¿˜æ˜¯è‡ªå®šä¹‰å‘½ä»¤,appå’Œç½‘å…³ä¼šå°†è‡ªå®šä¹‰å‘½ä»¤è½¬æ¢ä¸ºmeshæ ‡å‡†å‘½ä»¤
-    meshæ ‡å‡†å‘½ä»¤ä½¿ç”¨æŸ¥çœ‹<Mesh Model Specification>
+# DPµã½éÉÜ
+## mesh±ê×¼ÃüÁî
+    ÔÆ¶Ë²é¿´»¹ÊÇ×Ô¶¨ÒåÃüÁî,appºÍÍø¹Ø»á½«×Ô¶¨ÒåÃüÁî×ª»»Îªmesh±ê×¼ÃüÁî
+    mesh±ê×¼ÃüÁîÊ¹ÓÃ²é¿´<Mesh Model Specification>
 
-|æ¶‚é¸¦å®šä¹‰|meshå®šä¹‰|åç§°|
+|Í¿Ñ»¶¨Òå|mesh¶¨Òå|Ãû³Æ|
 |:--:|:--:|:--:|
-|1|Generic OnOff|å¼€å…³|
-|3|Light Lightness Actual|äº®åº¦å€¼|
-|4|Light CTL Temperature|å†·æš–å€¼|
-|5|Light HSL|å½©å…‰|
+|1|Generic OnOff|¿ª¹Ø|
+|3|Light Lightness Actual|ÁÁ¶ÈÖµ|
+|4|Light CTL Temperature|ÀäÅ¯Öµ|
+|5|Light HSL|²Ê¹â|
 
-## æ¶‚é¸¦å®šä¹‰å‘½ä»¤
-    1ï½30 ä¸ºåŸºç¡€åŠŸèƒ½é€šç”¨ DPï¼Œé€‚ç”¨äºå¯ä»¥å¤ç”¨åˆ°å…¶ä»–å¤§éƒ¨åˆ†å“ç±»çš„åŸºç¡€åŠŸèƒ½DPï¼Œé€šç”¨DPIDä¸å¯ä»¥é‡å¤ï¼›
-    31ï½50 ä¸ºæ–°åŠŸèƒ½é€šç”¨ DP ï¼Œé€‚ç”¨äºå¯ä»¥å¤ç”¨åˆ°å…¶ä»–å¤§éƒ¨åˆ†å“ç±»çš„æ–°åŠŸèƒ½DPï¼Œé€šç”¨DPIDä¸å¯ä»¥é‡å¤ï¼›
-    50ï½100ä¸ºå“ç±»ç‰¹æœ‰åŠŸèƒ½ DP ï¼Œé€‚ç”¨äºé€šç”¨åŠŸèƒ½DPæ— æ³•æ»¡è¶³éœ€æ±‚çš„æƒ…å†µä¸‹ï¼Œå„å“ç±»è‡ªä¸»å®šä¹‰çš„å“ç±»ç‰¹æœ‰çš„DPåŠŸèƒ½ï¼›
-    101ï½200ä¸ºè‡ªå®šä¹‰ DP ï¼Œé€‚ç”¨äºè‡ªå®šä¹‰æ–¹æ¡ˆï¼Œå®¢æˆ·æ–°å¢è‡ªå®šä¹‰åŠŸèƒ½ï¼›
-    201ï½250 ä¸ºç³»ç»Ÿ DPï¼Œé€‚ç”¨äºç”µå·¥ã€ä¼ æ„Ÿç­‰å…¶ä»–äº§å“çº¿å¯å¤ç”¨çš„DPèƒ½åŠ›ã€‚
+## Í¿Ñ»¶¨ÒåÃüÁî
+    1¡«30 Îª»ù´¡¹¦ÄÜÍ¨ÓÃ DP£¬ÊÊÓÃÓÚ¿ÉÒÔ¸´ÓÃµ½ÆäËû´ó²¿·ÖÆ·ÀàµÄ»ù´¡¹¦ÄÜDP£¬Í¨ÓÃDPID²»¿ÉÒÔÖØ¸´£»
+    31¡«50 ÎªĞÂ¹¦ÄÜÍ¨ÓÃ DP £¬ÊÊÓÃÓÚ¿ÉÒÔ¸´ÓÃµ½ÆäËû´ó²¿·ÖÆ·ÀàµÄĞÂ¹¦ÄÜDP£¬Í¨ÓÃDPID²»¿ÉÒÔÖØ¸´£»
+    50¡«100ÎªÆ·ÀàÌØÓĞ¹¦ÄÜ DP £¬ÊÊÓÃÓÚÍ¨ÓÃ¹¦ÄÜDPÎŞ·¨Âú×ãĞèÇóµÄÇé¿öÏÂ£¬¸÷Æ·Àà×ÔÖ÷¶¨ÒåµÄÆ·ÀàÌØÓĞµÄDP¹¦ÄÜ£»
+    101¡«200Îª×Ô¶¨Òå DP £¬ÊÊÓÃÓÚ×Ô¶¨Òå·½°¸£¬¿Í»§ĞÂÔö×Ô¶¨Òå¹¦ÄÜ£»
+    201¡«250 ÎªÏµÍ³ DP£¬ÊÊÓÃÓÚµç¹¤¡¢´«¸ĞµÈÆäËû²úÆ·Ïß¿É¸´ÓÃµÄDPÄÜÁ¦¡£
 
-|æ¶‚é¸¦å®šä¹‰DP|åç§°|å«ä¹‰|
+|Í¿Ñ»¶¨ÒåDP|Ãû³Æ|º¬Òå|
 |:--:|:--:|--|
-|1|å¼€å…³||
-|2|æ¨¡å¼|ç”¨äºåˆ‡æ¢ç¯çš„å·¥ä½œæ¨¡å¼:ç™½å…‰/å½©å…‰/åœºæ™¯/éŸ³ä¹å¾‹åŠ¨ç­‰|
-|3|äº®åº¦å€¼|ç™½å…‰æ¨¡å¼çš„äº®åº¦|
-|4|å†·æš–å€¼|ç™½å…‰æ¨¡å¼çš„è‰²æ¸©|
-|5|å½©å…‰|å½©å…‰æ¨¡å¼HSVæ¨¡å‹|
-|6|åœºæ™¯|1.æ¶‚é¸¦è‡ªå®šä¹‰åœºæ™¯<br>2.å¯å¢åŠ æœ€å¤šè‡³8ä¸ªåœºæ™¯<br>3.æ¯ä¸ªåœºæ™¯è‡³å¤š8ä¸ªå•å…ƒ<br>4.æ¨¡å¼:é™æ€,æ¸å˜,è·³å˜|
-|7|å€’è®¡æ—¶|1.ä»…æ”¯æŒæœ¬åœ°å€’è®¡æ—¶å¼€å…³<br>2.æ–­ä¸Šç”µæˆ–APPæ“ä½œå¼€å…³åå³å¤±æ•ˆ|
-|8|éŸ³ä¹å¾‹åŠ¨|APPä¾æ®éŸ³ä¹å°†HSVå‘é€ç»™è®¾å¤‡ç«¯æ‰§è¡Œ|
-|33|æ–­ç”µè®°å¿†|1.å¼€å¯å’Œå…³é—­æ–­ç”µè®°å¿†<br>2.å¼€å¯åå¯é€‰æ‹©ä»¥ä¸‹ä¸‰ç§æ¨¡å¼<br>0x00 åˆå§‹é»˜è®¤å€¼<br>0x01 æ¢å¤è®°å¿†å€¼<br>0x02 ç”¨æˆ·å®šåˆ¶(HSVBT)|
-|34|é€šç”µå‹¿æ‰°|1.å¼€å¯å’Œå…³é—­é€šç”µå‹¿æ‰°<br>2.å¼€å¯å,åœ¨å…³ç¯5så,é¦–æ¬¡ä¸Šç”µä¸ä¼šäº®ç¯,5så†…å†æ¬¡ä¸Šç”µæ‰ä¼šäº®ç¯<br>3.ç”¨äºæœ‰ç»å¸¸æ–­ç”µé£é™©çš„åœ°åŒº|
+|1|¿ª¹Ø||
+|2|Ä£Ê½|ÓÃÓÚÇĞ»»µÆµÄ¹¤×÷Ä£Ê½:°×¹â/²Ê¹â/³¡¾°/ÒôÀÖÂÉ¶¯µÈ|
+|3|ÁÁ¶ÈÖµ|°×¹âÄ£Ê½µÄÁÁ¶È|
+|4|ÀäÅ¯Öµ|°×¹âÄ£Ê½µÄÉ«ÎÂ|
+|5|²Ê¹â|²Ê¹âÄ£Ê½HSVÄ£ĞÍ|
+|6|³¡¾°|1.Í¿Ñ»×Ô¶¨Òå³¡¾°<br>2.¿ÉÔö¼Ó×î¶àÖÁ8¸ö³¡¾°<br>3.Ã¿¸ö³¡¾°ÖÁ¶à8¸öµ¥Ôª<br>4.Ä£Ê½:¾²Ì¬,½¥±ä,Ìø±ä|
+|7|µ¹¼ÆÊ±|1.½öÖ§³Ö±¾µØµ¹¼ÆÊ±¿ª¹Ø<br>2.¶ÏÉÏµç»òAPP²Ù×÷¿ª¹Øºó¼´Ê§Ğ§|
+|8|ÒôÀÖÂÉ¶¯|APPÒÀ¾İÒôÀÖ½«HSV·¢ËÍ¸øÉè±¸¶ËÖ´ĞĞ|
+|33|¶Ïµç¼ÇÒä|1.¿ªÆôºÍ¹Ø±Õ¶Ïµç¼ÇÒä<br>2.¿ªÆôºó¿ÉÑ¡ÔñÒÔÏÂÈıÖÖÄ£Ê½<br>0x00 ³õÊ¼Ä¬ÈÏÖµ<br>0x01 »Ö¸´¼ÇÒäÖµ<br>0x02 ÓÃ»§¶¨ÖÆ(HSVBT)|
+|34|Í¨µçÎğÈÅ|1.¿ªÆôºÍ¹Ø±ÕÍ¨µçÎğÈÅ<br>2.¿ªÆôºó,ÔÚ¹ØµÆ5sºó,Ê×´ÎÉÏµç²»»áÁÁµÆ,5sÄÚÔÙ´ÎÉÏµç²Å»áÁÁµÆ<br>3.ÓÃÓÚÓĞ¾­³£¶Ïµç·çÏÕµÄµØÇø|
 
-## é¥æ§å™¨å‘½ä»¤
-|æ¶‚é¸¦å‘½ä»¤|æ¶‚é¸¦åç§°|å«ä¹‰|
+## Ò£¿ØÆ÷ÃüÁî
+|Í¿Ñ»ÃüÁî|Í¿Ñ»Ãû³Æ|º¬Òå|
 |:--:|:--:|--|
-|0x81|è®¢é˜…é¥æ§å™¨|1.å°†è®¾å¤‡æ·»åŠ å…¥é¥æ§å™¨çš„ç¾¤ç»„<br>2.è®¢é˜…å®Œæˆå,é¥æ§å™¨å¯ä»¥æ§åˆ¶è¯¥ç¯|
-|0x83|äº®åº¦|é¥æ§å™¨æ§åˆ¶ç¯çš„äº®åº¦|
-|0x87|å–œå¥½æ”¶è—|1.å–œå¥½æ”¶è—ï¼šæ”¶åˆ°è¯¥å‘½ä»¤æ—¶è®¾å¤‡å°†å½“å‰çš„çŠ¶æ€è®°å½•ä¸‹æ¥ï¼Œå½¢æˆä¸€ä¸ªå–œå¥½ç»„å¹¶æ”¶è—<br>2.å–œå¥½æ‰§è¡Œï¼šæ”¶åˆ°è¯¥å‘½ä»¤æ—¶è®¾å¤‡å–å‡ºä¹‹å‰æ”¶è—çš„å–œå¥½ç»„ï¼Œå¹¶å°†è®¾å¤‡çŠ¶æ€åˆ‡æ¢ä¸ºæ”¶è—çš„çŠ¶æ€|
+|0x81|¶©ÔÄÒ£¿ØÆ÷|1.½«Éè±¸Ìí¼ÓÈëÒ£¿ØÆ÷µÄÈº×é<br>2.¶©ÔÄÍê³Éºó,Ò£¿ØÆ÷¿ÉÒÔ¿ØÖÆ¸ÃµÆ|
+|0x83|ÁÁ¶È|Ò£¿ØÆ÷¿ØÖÆµÆµÄÁÁ¶È|
+|0x87|Ï²ºÃÊÕ²Ø|1.Ï²ºÃÊÕ²Ø£ºÊÕµ½¸ÃÃüÁîÊ±Éè±¸½«µ±Ç°µÄ×´Ì¬¼ÇÂ¼ÏÂÀ´£¬ĞÎ³ÉÒ»¸öÏ²ºÃ×é²¢ÊÕ²Ø<br>2.Ï²ºÃÖ´ĞĞ£ºÊÕµ½¸ÃÃüÁîÊ±Éè±¸È¡³öÖ®Ç°ÊÕ²ØµÄÏ²ºÃ×é£¬²¢½«Éè±¸×´Ì¬ÇĞ»»ÎªÊÕ²ØµÄ×´Ì¬|
 
-# æ–‡ä»¶ä½¿ç”¨ä»‹ç»
-|æ–‡ä»¶å|æ–‡ä»¶ä»‹ç»|ä½¿ç”¨æ³¨æ„äº‹é¡¹|
+# ÎÄ¼şÊ¹ÓÃ½éÉÜ
+|ÎÄ¼şÃû|ÎÄ¼ş½éÉÜ|Ê¹ÓÃ×¢ÒâÊÂÏî|
 |:--:|:--:|--|
 ||||
 
-# é‡ç‚¹å‡½æ•°ä»‹ç»
-|æ–‡ä»¶å|å‡½æ•°å|å‡½æ•°ä½œç”¨|å¤‡æ³¨|
+# ÖØµãº¯Êı½éÉÜ
+|ÎÄ¼şÃû|º¯ÊıÃû|º¯Êı×÷ÓÃ|±¸×¢|
 |:--:|:--:|--|--|
-|app_common.c|void mesh_app_init(void)|ç”¨äºåº”ç”¨å±‚é€»è¾‘çš„åˆå§‹åŒ–||
-|app_common.c|void mesh_main_run(void)|ç”¨äºåº”ç”¨å±‚é€»è¾‘çš„å‘¨æœŸæ€§æ‰§è¡Œ||
-|app_common.c|void mesh_factory_reset(void)|è®¾å¤‡è¢«é‡ç½®å‰ä¼šè°ƒç”¨è¯¥å‡½æ•°ï¼Œç”¨äºåº”ç”¨å±‚åœ¨è®¾å¤‡é‡ç½®æ—¶æ¸…ç©ºä¸€äº›åº”ç”¨å±‚çº§åˆ«çš„ flash æ•°æ®||
-|app_common.c|	void app_tuya_mdev_test(uint8_t is_Authorized, uint8_t rssi)|çƒ§å½•æˆæƒæ—¶çš„äº§æµ‹å›è°ƒå‡½æ•°ï¼Œä¸€èˆ¬ä¸è¦æ”¹ï¼Œä¸è¦åŠ¨||
-|app_common.c|	void mesh_state_callback(mesh_state_t stat)|å„ç§meshçŠ¶æ€å‘ç”Ÿå˜åŒ–æ—¶ï¼Œä¼šè°ƒç”¨è¯¥å‡½æ•°ï¼Œé€šçŸ¥ç»™åº”ç”¨å±‚ï¼ˆçœ‹ mesh_state_t å¯çŸ¥é“æœ‰å“ªäº›ä¿¡æ¯ä¼šä¸ŠæŠ¥ï¼‰||
-|app_common.c|void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t opcode, uint8_t *data, uint16_t data_len, uint8_t ttl)|æ‰‹æœº -> è®¾å¤‡çš„æ•°æ®å›è°ƒå‡½æ•°ï¼ˆéå¸¸é‡è¦ï¼‰<br>src_addr[in]ï¼šæ•°æ®æºåœ°å€<br>dst_addr[in]ï¼šæ•°æ®ç›®çš„åœ°å€<br>opcode[in]ï¼šå‘½ä»¤å­—<br>data[in]ï¼šæ•°æ®æŒ‡é’ˆ<br>data_len[in]ï¼šæ•°æ®é•¿åº¦<br>ttl[in]ï¼šæ•°æ®å‰©ä½™è½¬å‘æ¬¡æ•°||
-|app_common.c|void mesh_oem_config_init(void)|è¯»å–flash/jsoné…ç½®æ–‡ä»¶||
-|app_light_control.c|OPERATE_LIGHT app_light_ctrl_proc(void)|ç¯æ§åˆ¶å‡½æ•°||
-|app_light_control.c|void app_light_ctrl_loop(void)|åœ¨void mesh_main_run(void)ä¸­è¿è¡Œï¼Œå®šæ—¶è°ƒåº¦ç¯æ§ä»»åŠ¡||
-|app_light_control.c|OPERATE_LIGHT app_light_real_time_ctrl_proc(void)|å®æ—¶æ§ç¯ï¼Œç”¨äºéŸ³ä¹å¾‹åŠ¨||
-|app_light_prompt.c|void app_light_ctrl_prompt_start(void)|é…ç½‘æ—¶æŒ‡ç¤ºç¯å¼€å¯||
-|app_light_prompt.c|void app_light_ctrl_prompt_stop(void)|é…ç½‘æ—¶æŒ‡ç¤ºç¯å…³é—­||
-|app_uart.c|void app_uart_init(void)|é™¤äº†ä¸²å£åˆå§‹åŒ–ï¼Œè¿˜æœ‰ FIFO åˆå§‹åŒ–ã€å­˜å‚¨åˆå§‹åŒ–ã€äº§æµ‹åˆå§‹åŒ–ã€ä¸mcué€šä¿¡åˆå§‹åŒ–||
-|app_uart.c|void app_uart_run(void)|æ˜¯ä¸€ä¸ª loop å‡½æ•°ï¼Œä¸æ–­æ‰§è¡Œä»ä¸²å£è¯»å–æ•°æ®ï¼Œæ”¾å…¥ fifo ä¸­|æ­¤å¤–è¿˜æœ‰ä¸¤ä¸ª loop å‡½æ•°åœ¨è¿™ä¸ªæ€»çš„ loop ä¸­æ‰§è¡Œï¼š<br>app_factory_test_run();<br>uart_server_run();//è§£æFIFOä¸­çš„æ•°æ®ï¼Œå¹¶è°ƒç”¨ç›¸åº”çš„å¤„ç†å‡½æ•°|
-|app_uart.c|static void app_uart_server_run(void)|æŒ‰ç…§ä¸²å£åè®®è§£æ FIFO ä¸­çš„ä¸²å£æ•°æ®ï¼Œè·å–æœ‰æ•ˆçš„æ•°æ®å¸§ï¼Œæ ¹æ®æ•°æ®å¸§ç±»åˆ«ï¼Œåˆ†åˆ«é€åˆ°ï¼š<br>äº§æµ‹æ•°æ®å¤„ç†æ¥å£app_factory_test_cmd(cmd,&buf[F_DATA],len)<br>ä¸MCUé€šä¿¡çš„ä¸²å£å¯¹æ¥æ•°æ®å¤„ç†æ¥å£ty_uart_cmd_server.receive_cmd(u8 cmd, u8 fur, u8 *para, u8 len)|HEADä¸­æ˜¯A5 5Aè¡¨ç¤ºæ˜¯ MCUå‘æ¥çš„æ•°æ®ï¼›æ˜¯66 AAè¡¨ç¤ºæ˜¯äº§æµ‹ä¸Šä½æœºå‘æ¥çš„æ•°æ®ã€‚|
-|app_uart.c|int app_mesh_uart_write(u8 fur, u8 *params, u8 len)|å°†meshç½‘ç»œä¸­ç¯çš„å‘½ä»¤/ä¿¡æ¯å‘é€ç»™MCU|æ˜¯å¦å‘é€å–å†³äº<br>ty_uart_cmd_server_get_txtomcu_flag()<br>MCUå‘é€å‘½ä»¤ç»™BTè®¾ç½®<br>ty_uart_cmd_server_set_txtomcu_flag(bool flag)|
-|app_uart.c|void app_mesh_uart_upload(u8 *params, u8 len, u8 is_group)|MCUé€ä¼ DPæ•°æ®||
-|app_uart.c|void app_mesh_uart_read(u8 fur, u8 *params, u8 len)|MCUè¯»å–ç¯åŠŸèƒ½ä¿¡æ¯ã€åœºæ™¯IDã€å®Œæ•´åœºæ™¯ã€å€’è®¡æ—¶ã€meshçŠ¶æ€||
-|app_uart.c|void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len)|MCUæ§åˆ¶ç¯åŠŸèƒ½ã€åœºæ™¯IDã€å®Œæ•´åœºæ™¯ã€å€’è®¡æ—¶ï¼ŒBTé‡ç½®||
-|tuya_sigmesh_hal.c|void tuya_mesh_node_init(node_info_t *node_info)|mesh èŠ‚ç‚¹åˆå§‹åŒ–ï¼Œç›¸å…³èƒ½åŠ›çš„é…ç½®ï¼Œnode_info[in]ï¼šèŠ‚ç‚¹èƒ½åŠ›è®¾ç½®|è®¾å¤‡åˆå§‹åŒ–æµç¨‹ï¼Œå¿…é¡»è°ƒç”¨|
-|tuya_sigmesh_hal.c|void tuya_mesh_data_send(uint16_t src_addr, uint16_t dst_addr, uint32_t opcode, uint8_t *data, uint16_t data_len, uint16_t appkey_idx, uint8_t is_rsp)|mesh æ•°æ®å‘é€ API<br>src_addr[in]ï¼šæ•°æ®æºåœ°å€<br>dst_addr[in]ï¼šæ•°æ®ç›®çš„åœ°å€<br>opcode[in]ï¼šå‘½ä»¤å­—<br>data[in]ï¼šæ•°æ®æŒ‡é’ˆ<br>data_len[in]ï¼šæ•°æ®é•¿åº¦<br>appkey_idx[in]ï¼šä½¿ç”¨çš„app_key<br>is_rsp[in]ï¼šæ˜¯å¦statuså›å¤||
-|tuya_sigmesh_hal.c|void tuya_primary_ele_addr_set(uint16_t addr, int save)|è®¾ç½®è®¾å¤‡çš„ unicast addr<br>addr[in]ï¼šè®¾å¤‡åœ°å€<br>save[in]ï¼šæ˜¯å¦flashè®°å¿†||
-|tuya_sigmesh_hal.c|uint16_t get_primary_ele_addr(void)|è·å–è®¾å¤‡çš„ unicast addr||
-|tuya_sigmesh_hal.c|void tuya_mesh_devkey_set(uint8_t *key)|ä¸»åŠ¨æ›´æ–°è®¾å¤‡çš„devkey||
-|tuya_sigmesh_hal.c|void tuya_mesh_network_reset_with_restore(uint16_t restore_time_s)|å°†è®¾å¤‡ç§»é™¤ç½‘ç»œå¹¶æ¢å¤åˆ°é…ç½‘çŠ¶æ€ï¼Œä¸”é…ç½®è¶…æ—¶æ—¶é—´ï¼Œè¶…æ—¶åæ¢å¤åˆ°ç§»é™¤å‰çš„ç½‘ç»œ||
-|tuya_sigmesh_hal.c|void tuya_mesh_rf_power_set(TUYA_RF_Power level)|è®¾ç½®å‘å°„åŠŸç‡||
-|tuya_sigmesh_hal.c|void tuya_mesh_uuid_set(uint8_t *uuid)|uuid æ›´æ–°æ¥å£||
-|tuya_sigmesh_hal.c|void tuya_gatt_adv_beacon_enable(uint8_t enable)|å¹¿æ’­ beacon ä½¿èƒ½||
-|tuya_sigmesh_hal.c|uint8_t get_if_prov_success(void)|è·å–è®¾å¤‡é…ç½‘çŠ¶æ€||
-|fast_provision_model.c|int mesh_reset_network(u8 provision_enable, u16 recover_time_s)|å°†è®¾å¤‡ç§»é™¤ç½‘ç»œå¹¶æ¢å¤åˆ°é…ç½‘çŠ¶æ€||
-|tuya_node_init.c|void tuya_pid_set(uint8_t *pid)|PID æ›´æ–°æ¥å£ï¼Œä¸è°ƒç”¨åˆ™é»˜è®¤ç”¨æˆæƒçš„PID|8å­—èŠ‚é•¿åº¦çš„PIDå­—ç¬¦ä¸²|
-|tuya_node_init.c|void app_tuya_mesh_category_set(uint16_t mesh_category)|mesh è®¾å¤‡èƒ½åŠ›å€¼é…ç½®||
-|hal_hw_timer.c|OPERATE_LIGHT ty_light_basis_hw_timer_start(IN u32 uiCycleUs, IN void* pCallback)|ç¡¬ä»¶å®šæ—¶ä»»åŠ¡ï¼Œç”¨äºç¯å…‰æ¸å˜ä»»åŠ¡||
-|hal_hw_timer.c|OPERATE_LIGHT ty_light_basis_hw_timer_stop(void)|å…³é—­ç¡¬ä»¶å®šæ—¶ä»»åŠ¡ï¼Œç”¨äºç¯å…‰æ¸å˜ä»»åŠ¡||
-|ty_light_basis_sw_timer.c|OPERATE_LIGHT ty_light_basis_sw_timer_start(IN u8 ucTimerID, IN u32 uiCycleMs, IN void* pCallback);|è½¯ä»¶å®šæ—¶ä»»åŠ¡ï¼Œç”¨äºç¯å…‰æ§åˆ¶ä»»åŠ¡||
-|ty_light_basis_sw_timer.c|OPERATE_LIGHT ty_light_basis_sw_timer_stop(IN u8 ucTimerID);|å…³é—­è½¯ä»¶å®šæ—¶ä»»åŠ¡ï¼Œç”¨äºç¯å…‰æ§åˆ¶ä»»åŠ¡||
-|ty_light_basis_sw_timer.c|void ty_light_basis_sw_timer_handler(void);|å¤„ç†å®šæ—¶ä»»åŠ¡||
-|ty_light_driver_set.c|OPERATE_LIGHT ty_light_driver_set_init(IN DRIVER_CONFIG_T *pLightConfig);|ç¯é©±åŠ¨åˆå§‹åŒ–ï¼Œæœ‰ä¸‰ç§æ¨¡å¼:<br>PwmInit<br>Sm2135Init<br>tSm16726bInit||
-|ty_light_gradual.c|void ty_light_gradual_hw_timer_handler(void);|ç¯å…‰æ¸å˜å®šæ—¶ä»»åŠ¡||
-|ty_light_remote.c|void ty_light_remote_dp_data(u8 * par, int par_len);|é¥æ§å™¨DPç‚¹æ§åˆ¶å¤„ç†||
-|ty_light_scene.c|void ty_light_scene_cmd_sync(u8 uint_num)|åœºæ™¯åŒæ­¥||
-|ty_light_scene.c|void ty_light_scene_ctrl_change_start(IN u32 uiChangeTimeMs)|å®šæ—¶æ—¶é—´åå¼€å§‹åœºæ™¯æ”¹å˜||
-|ty_light_scene.c|OPERATE_LIGHT ty_light_scene_ctrl_change(OUT bool *pCycleEnable, OUT u32 *pCycleTimeMs)|å°†åœºæ™¯æ§åˆ¶ä¿¡æ¯è½¬å˜ä¸ºRGBCWæ‰€éœ€çš„å€¼||
+|app_common.c|void mesh_app_init(void)|ÓÃÓÚÓ¦ÓÃ²ãÂß¼­µÄ³õÊ¼»¯||
+|app_common.c|void mesh_main_run(void)|ÓÃÓÚÓ¦ÓÃ²ãÂß¼­µÄÖÜÆÚĞÔÖ´ĞĞ||
+|app_common.c|void mesh_factory_reset(void)|Éè±¸±»ÖØÖÃÇ°»áµ÷ÓÃ¸Ãº¯Êı£¬ÓÃÓÚÓ¦ÓÃ²ãÔÚÉè±¸ÖØÖÃÊ±Çå¿ÕÒ»Ğ©Ó¦ÓÃ²ã¼¶±ğµÄ flash Êı¾İ||
+|app_common.c|	void app_tuya_mdev_test(uint8_t is_Authorized, uint8_t rssi)|ÉÕÂ¼ÊÚÈ¨Ê±µÄ²ú²â»Øµ÷º¯Êı£¬Ò»°ã²»Òª¸Ä£¬²»Òª¶¯||
+|app_common.c|	void mesh_state_callback(mesh_state_t stat)|¸÷ÖÖmesh×´Ì¬·¢Éú±ä»¯Ê±£¬»áµ÷ÓÃ¸Ãº¯Êı£¬Í¨Öª¸øÓ¦ÓÃ²ã£¨¿´ mesh_state_t ¿ÉÖªµÀÓĞÄÄĞ©ĞÅÏ¢»áÉÏ±¨£©||
+|app_common.c|void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t opcode, uint8_t *data, uint16_t data_len, uint8_t ttl)|ÊÖ»ú -> Éè±¸µÄÊı¾İ»Øµ÷º¯Êı£¨·Ç³£ÖØÒª£©<br>src_addr[in]£ºÊı¾İÔ´µØÖ·<br>dst_addr[in]£ºÊı¾İÄ¿µÄµØÖ·<br>opcode[in]£ºÃüÁî×Ö<br>data[in]£ºÊı¾İÖ¸Õë<br>data_len[in]£ºÊı¾İ³¤¶È<br>ttl[in]£ºÊı¾İÊ£Óà×ª·¢´ÎÊı||
+|app_common.c|void mesh_oem_config_init(void)|¶ÁÈ¡flash/jsonÅäÖÃÎÄ¼ş||
+|app_light_control.c|OPERATE_LIGHT app_light_ctrl_proc(void)|µÆ¿ØÖÆº¯Êı||
+|app_light_control.c|void app_light_ctrl_loop(void)|ÔÚvoid mesh_main_run(void)ÖĞÔËĞĞ£¬¶¨Ê±µ÷¶ÈµÆ¿ØÈÎÎñ||
+|app_light_control.c|OPERATE_LIGHT app_light_real_time_ctrl_proc(void)|ÊµÊ±¿ØµÆ£¬ÓÃÓÚÒôÀÖÂÉ¶¯||
+|app_light_prompt.c|void app_light_ctrl_prompt_start(void)|ÅäÍøÊ±Ö¸Ê¾µÆ¿ªÆô||
+|app_light_prompt.c|void app_light_ctrl_prompt_stop(void)|ÅäÍøÊ±Ö¸Ê¾µÆ¹Ø±Õ||
+|app_uart.c|void app_uart_init(void)|³ıÁË´®¿Ú³õÊ¼»¯£¬»¹ÓĞ FIFO ³õÊ¼»¯¡¢´æ´¢³õÊ¼»¯¡¢²ú²â³õÊ¼»¯¡¢ÓëmcuÍ¨ĞÅ³õÊ¼»¯||
+|app_uart.c|void app_uart_run(void)|ÊÇÒ»¸ö loop º¯Êı£¬²»¶ÏÖ´ĞĞ´Ó´®¿Ú¶ÁÈ¡Êı¾İ£¬·ÅÈë fifo ÖĞ|´ËÍâ»¹ÓĞÁ½¸ö loop º¯ÊıÔÚÕâ¸ö×ÜµÄ loop ÖĞÖ´ĞĞ£º<br>app_factory_test_run();<br>uart_server_run();//½âÎöFIFOÖĞµÄÊı¾İ£¬²¢µ÷ÓÃÏàÓ¦µÄ´¦Àíº¯Êı|
+|app_uart.c|static void app_uart_server_run(void)|°´ÕÕ´®¿ÚĞ­Òé½âÎö FIFO ÖĞµÄ´®¿ÚÊı¾İ£¬»ñÈ¡ÓĞĞ§µÄÊı¾İÖ¡£¬¸ù¾İÊı¾İÖ¡Àà±ğ£¬·Ö±ğËÍµ½£º<br>²ú²âÊı¾İ´¦Àí½Ó¿Úapp_factory_test_cmd(cmd,&buf[F_DATA],len)<br>ÓëMCUÍ¨ĞÅµÄ´®¿Ú¶Ô½ÓÊı¾İ´¦Àí½Ó¿Úty_uart_cmd_server.receive_cmd(u8 cmd, u8 fur, u8 *para, u8 len)|HEADÖĞÊÇA5 5A±íÊ¾ÊÇ MCU·¢À´µÄÊı¾İ£»ÊÇ66 AA±íÊ¾ÊÇ²ú²âÉÏÎ»»ú·¢À´µÄÊı¾İ¡£|
+|app_uart.c|int app_mesh_uart_write(u8 fur, u8 *params, u8 len)|½«meshÍøÂçÖĞµÆµÄÃüÁî/ĞÅÏ¢·¢ËÍ¸øMCU|ÊÇ·ñ·¢ËÍÈ¡¾öÓÚ<br>ty_uart_cmd_server_get_txtomcu_flag()<br>MCU·¢ËÍÃüÁî¸øBTÉèÖÃ<br>ty_uart_cmd_server_set_txtomcu_flag(bool flag)|
+|app_uart.c|void app_mesh_uart_upload(u8 *params, u8 len, u8 is_group)|MCUÍ¸´«DPÊı¾İ||
+|app_uart.c|void app_mesh_uart_read(u8 fur, u8 *params, u8 len)|MCU¶ÁÈ¡µÆ¹¦ÄÜĞÅÏ¢¡¢³¡¾°ID¡¢ÍêÕû³¡¾°¡¢µ¹¼ÆÊ±¡¢mesh×´Ì¬||
+|app_uart.c|void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len)|MCU¿ØÖÆµÆ¹¦ÄÜ¡¢³¡¾°ID¡¢ÍêÕû³¡¾°¡¢µ¹¼ÆÊ±£¬BTÖØÖÃ||
+|tuya_sigmesh_hal.c|void tuya_mesh_node_init(node_info_t *node_info)|mesh ½Úµã³õÊ¼»¯£¬Ïà¹ØÄÜÁ¦µÄÅäÖÃ£¬node_info[in]£º½ÚµãÄÜÁ¦ÉèÖÃ|Éè±¸³õÊ¼»¯Á÷³Ì£¬±ØĞëµ÷ÓÃ|
+|tuya_sigmesh_hal.c|void tuya_mesh_data_send(uint16_t src_addr, uint16_t dst_addr, uint32_t opcode, uint8_t *data, uint16_t data_len, uint16_t appkey_idx, uint8_t is_rsp)|mesh Êı¾İ·¢ËÍ API<br>src_addr[in]£ºÊı¾İÔ´µØÖ·<br>dst_addr[in]£ºÊı¾İÄ¿µÄµØÖ·<br>opcode[in]£ºÃüÁî×Ö<br>data[in]£ºÊı¾İÖ¸Õë<br>data_len[in]£ºÊı¾İ³¤¶È<br>appkey_idx[in]£ºÊ¹ÓÃµÄapp_key<br>is_rsp[in]£ºÊÇ·ñstatus»Ø¸´||
+|tuya_sigmesh_hal.c|void tuya_primary_ele_addr_set(uint16_t addr, int save)|ÉèÖÃÉè±¸µÄ unicast addr<br>addr[in]£ºÉè±¸µØÖ·<br>save[in]£ºÊÇ·ñflash¼ÇÒä||
+|tuya_sigmesh_hal.c|uint16_t get_primary_ele_addr(void)|»ñÈ¡Éè±¸µÄ unicast addr||
+|tuya_sigmesh_hal.c|void tuya_mesh_devkey_set(uint8_t *key)|Ö÷¶¯¸üĞÂÉè±¸µÄdevkey||
+|tuya_sigmesh_hal.c|void tuya_mesh_network_reset_with_restore(uint16_t restore_time_s)|½«Éè±¸ÒÆ³ıÍøÂç²¢»Ö¸´µ½ÅäÍø×´Ì¬£¬ÇÒÅäÖÃ³¬Ê±Ê±¼ä£¬³¬Ê±ºó»Ö¸´µ½ÒÆ³ıÇ°µÄÍøÂç||
+|tuya_sigmesh_hal.c|void tuya_mesh_rf_power_set(TUYA_RF_Power level)|ÉèÖÃ·¢Éä¹¦ÂÊ||
+|tuya_sigmesh_hal.c|void tuya_mesh_uuid_set(uint8_t *uuid)|uuid ¸üĞÂ½Ó¿Ú||
+|tuya_sigmesh_hal.c|void tuya_gatt_adv_beacon_enable(uint8_t enable)|¹ã²¥ beacon Ê¹ÄÜ||
+|tuya_sigmesh_hal.c|uint8_t get_if_prov_success(void)|»ñÈ¡Éè±¸ÅäÍø×´Ì¬||
+|fast_provision_model.c|int mesh_reset_network(u8 provision_enable, u16 recover_time_s)|½«Éè±¸ÒÆ³ıÍøÂç²¢»Ö¸´µ½ÅäÍø×´Ì¬||
+|tuya_node_init.c|void tuya_pid_set(uint8_t *pid)|PID ¸üĞÂ½Ó¿Ú£¬²»µ÷ÓÃÔòÄ¬ÈÏÓÃÊÚÈ¨µÄPID|8×Ö½Ú³¤¶ÈµÄPID×Ö·û´®|
+|tuya_node_init.c|void app_tuya_mesh_category_set(uint16_t mesh_category)|mesh Éè±¸ÄÜÁ¦ÖµÅäÖÃ||
+|hal_hw_timer.c|OPERATE_LIGHT ty_light_basis_hw_timer_start(IN u32 uiCycleUs, IN void* pCallback)|Ó²¼ş¶¨Ê±ÈÎÎñ£¬ÓÃÓÚµÆ¹â½¥±äÈÎÎñ||
+|hal_hw_timer.c|OPERATE_LIGHT ty_light_basis_hw_timer_stop(void)|¹Ø±ÕÓ²¼ş¶¨Ê±ÈÎÎñ£¬ÓÃÓÚµÆ¹â½¥±äÈÎÎñ||
+|ty_light_basis_sw_timer.c|OPERATE_LIGHT ty_light_basis_sw_timer_start(IN u8 ucTimerID, IN u32 uiCycleMs, IN void* pCallback);|Èí¼ş¶¨Ê±ÈÎÎñ£¬ÓÃÓÚµÆ¹â¿ØÖÆÈÎÎñ||
+|ty_light_basis_sw_timer.c|OPERATE_LIGHT ty_light_basis_sw_timer_stop(IN u8 ucTimerID);|¹Ø±ÕÈí¼ş¶¨Ê±ÈÎÎñ£¬ÓÃÓÚµÆ¹â¿ØÖÆÈÎÎñ||
+|ty_light_basis_sw_timer.c|void ty_light_basis_sw_timer_handler(void);|´¦Àí¶¨Ê±ÈÎÎñ||
+|ty_light_driver_set.c|OPERATE_LIGHT ty_light_driver_set_init(IN DRIVER_CONFIG_T *pLightConfig);|µÆÇı¶¯³õÊ¼»¯£¬ÓĞÈıÖÖÄ£Ê½:<br>PwmInit<br>Sm2135Init<br>tSm16726bInit||
+|ty_light_gradual.c|void ty_light_gradual_hw_timer_handler(void);|µÆ¹â½¥±ä¶¨Ê±ÈÎÎñ||
+|ty_light_remote.c|void ty_light_remote_dp_data(u8 * par, int par_len);|Ò£¿ØÆ÷DPµã¿ØÖÆ´¦Àí||
+|ty_light_scene.c|void ty_light_scene_cmd_sync(u8 uint_num)|³¡¾°Í¬²½||
+|ty_light_scene.c|void ty_light_scene_ctrl_change_start(IN u32 uiChangeTimeMs)|¶¨Ê±Ê±¼äºó¿ªÊ¼³¡¾°¸Ä±ä||
+|ty_light_scene.c|OPERATE_LIGHT ty_light_scene_ctrl_change(OUT bool *pCycleEnable, OUT u32 *pCycleTimeMs)|½«³¡¾°¿ØÖÆĞÅÏ¢×ª±äÎªRGBCWËùĞèµÄÖµ||
 
-# jsonä½¿ç”¨ä»‹ç»
-jsonä»‹ç»
-|ç±»åˆ«|jsonå|åç§°|å®¢æˆ·éœ€æ”¹åŠ¨|å«ä¹‰|
+# jsonÊ¹ÓÃ½éÉÜ
+json½éÉÜ
+|Àà±ğ|jsonÃû|Ãû³Æ|¿Í»§Ğè¸Ä¶¯|º¬Òå|
 |:--:|:--:|:--:|:--:|--|
-|json head|name|å›ºä»¶æ ‡è¯†å|æ˜¯|1.é¦–å…ˆåœ¨æ¶‚é¸¦å¹³å°åˆ›å»ºå›ºä»¶æ ‡è¯†å<br>2.ä¸Šä¼ çš„å›ºä»¶åç§°ä¸æ¶‚é¸¦å¹³å°ä¸€è‡´|
-|json head|description|é…ç½®åŠŸèƒ½|å¯|ä»…ç”¨äºæè¿°è¯¥å›ºä»¶|
-|json head|version|å›ºä»¶ç‰ˆæœ¬|æ˜¯|å½¢å¼x.x|
-|json head|ic|èŠ¯ç‰‡å‹å·|å¦|tlsr825x|
-|json head|hardware|ç¡¬ä»¶æ¨¡å—|å¦|TYBT3L|
-|json head|log|æ‰“å°è°ƒè¯•ä¿¡æ¯|å¯|1.è°ƒè¯•æ˜¯å¯ä»¥ä¸º1,å°†logä¿¡æ¯è¾“å‡º<br>2.æˆå“å›ºä»¶å¿…é¡»è®¾ç½®ä¸º0|
-|json head|oem|å›ºä»¶å½¢å¼|å¦|å»ºè®®ä¸º1|
-|json head|json_config|jsonå¯é…|å¦|å¿…é¡»ä¸º0|
-|json head|kind|è®¾å¤‡èƒ½åŠ›|å¦|é»˜è®¤å³å¯|
-|json head|pid|pidåç§°|æ˜¯|å»ºè®®å¡«å†™å›ºä»¶keyåç§°|
-|json head|vendorid|å“ç±»ä¿¡æ¯|æ˜¯|1.ä¸€è·¯ç¯:1011<br>2.ä¸¤è·¯ç¯:1012<br>3.ä¸‰è·¯ç¯:1013<br>4.å››è·¯ç¯:1014<br>5.äº”è·¯ç¯:1015|
-||Jsonver|jsoné…ç½®ç‰ˆæœ¬|å¦|é»˜è®¤å³å¯|
-||category|è®¾å¤‡èƒ½åŠ›|æ˜¯|ä¸kindä¿æŒä¸€è‡´|
-||module|æ¨¡å—é€‰å‹|æ˜¯|1,BT8C<br>2.éBT8Cæ¨¡å—å¡«BT3L|
-||cmod|ç¯ç±»é€‰å‹|æ˜¯|1.ä¸€è·¯ç¯:c<br>2.ä¸¤è·¯ç¯:cw<br>3.ä¸‰è·¯ç¯:rgb<br>4.å››è·¯ç¯:rgbc<br>5.äº”è·¯ç¯:rgbcw|
-||dmod|é©±åŠ¨é€‰å‹|æ˜¯|0:PWMé©±åŠ¨<br>1:SM16726B<br>2:SM2135E|
-||cwtype|ç™½å…‰è°ƒèŠ‚é©±åŠ¨æ–¹å¼|æ˜¯|0:CW - å†·å…‰/æš–å…‰<br>1:CCT - äº®åº¦/è‰²æ¸©|
-||onoffmode|å¼€å…³æ¸å˜|æ˜¯|0:å¼€å…³æ—¶æœ‰æ¸å˜<br>1:å¼€å…³æ—¶æ— æ¸å˜|
-||pmemory|æ–­ç”µè®°å¿†|æ˜¯|0:æ— æ–­ç”µè®°å¿†<br>1:æœ‰æ–­ç”µè®°å¿†|
-||defcolor|é…ç½‘æˆåŠŸåé¢œè‰²|æ˜¯|å½©å…‰å¯é€‰:r/g/b<br>ç™½å…‰å¯é€‰:c|
-||defbright|é…ç½‘æˆåŠŸåäº®åº¦|æ˜¯|èŒƒå›´ï¼š10~100|
-||deftemp|é…ç½‘æˆåŠŸåè‰²æ¸©|æ˜¯|defcolorä¸ºcæ—¶æœ‰æ•ˆ<br>èŒƒå›´ï¼š0~100|
-||cwmaxp|å†·æš–æ··å…‰æœ€å¤§åŠŸç‡|æ˜¯|é»˜è®¤ä¸º100<br>èŒƒå›´ï¼š100~200ï¼Œé—´è·ï¼š10|
-||brightmin|ç™½å…‰äº®åº¦æœ€å°å€¼|æ˜¯|èŒƒå›´ï¼š1~100ï¼Œé—´è·ï¼š1|
-||brightmax|ç™½å…‰äº®åº¦æœ€å¤§å€¼|æ˜¯|èŒƒå›´ï¼š1~100ï¼Œé—´è·ï¼š1|
-||colormin|å½©å…‰äº®åº¦æœ€å°å€¼|æ˜¯|èŒƒå›´ï¼š1~100ï¼Œé—´è·ï¼š1|
-||colormax|å½©å…‰äº®åº¦æœ€å¤§å€¼|æ˜¯|èŒƒå›´ï¼š1~100ï¼Œé—´è·ï¼š1|
-||wfcfg|é¦–æ¬¡é…ç½‘è§¦å‘æ–¹å¼|æ˜¯||
-||rstmode|è§¦å‘é…ç½‘æ–¹å¼|å¦|é»˜è®¤ä¸º0|
-||rstnum|é€šæ–­ç”µå¤ä½æ¬¡æ•°|æ˜¯|èŒƒå›´ï¼š3~10ï¼Œé—´è·ï¼š1|
-||rstcor|é…ç½‘æ—¶æé†’é¢œè‰²|æ˜¯|å½©å…‰å¯é€‰:r/g/b<br>ç™½å…‰å¯é€‰:c|
-||rstbr|é…ç½‘æ—¶æé†’äº®åº¦|æ˜¯|èŒƒå›´ï¼š10~100|
-||rsttemp|é…ç½‘æ—¶æé†’è‰²æ¸©|æ˜¯|rstcorä¸ºcæ—¶æœ‰æ•ˆ<br>èŒƒå›´ï¼š0~100|
-||pairt|é…ç½‘æé†’çš„æ—¶é—´|æ˜¯|èŒƒå›´ï¼š6~600<br>æ³¨:å‘¼å¸æé†’æ—¶,æ—¶é—´å»ºè®®ä¸º6,å‘¼å¸æœŸé—´ä¼šå½±å“GATTé…ç½‘|
-||notdisturb|å‹¿æ‰°æ¨¡å¼|æ˜¯|0:å…³é—­<br>1:å¼€å¯|
-|PWM|pmwhz|PWM é¢‘ç‡|æ˜¯|èŒƒå›´ï¼š500~20000ï¼›é—´è·ï¼š100|
-|PWM|r_pin/g_pin/<br>b_pin/c_pin/<br>w_pin|rgbcwå¼•è„š|æ˜¯|å¡«å†™0~14,å¼•è„šå¯¹åº”å…³ç³»å¦‚ä¸‹<br>0:GPIO_PB1<br>1:GPIO_PB7<br>2:GPIO_PB5<br>3:GPIO_PB4<br>4:GPIO_PA0<br>6:GPIO_PC0<br>7:GPIO_PC2<br>8:GPIO_PC3<br>9:GPIO_PD2<br>10:GPIO_PD7<br>11:GPIO_PC4<br>12:GPIO_PB0<br>13:GPIO_PC5<br>14:GPIO_PC1|
-|PWM|r_lv/g_lv/<br>b_lv/c_lv/<br>w_lv|æœ‰æ•ˆç”µå¹³|æ˜¯|é»˜è®¤ä¸º1<br>æ‰€æœ‰å¼•è„šå¿…é¡»ä¿æŒä¸€è‡´<br>1:é«˜ç”µå¹³ç‚¹äº®<br>0:ä½ç”µå¹³ç‚¹äº®|
-|IICèŠ¯ç‰‡é©±åŠ¨|iicr/iicg/iicb<br>/iicc/iicw|rgbcwé€šé“|æ˜¯|é…ç½®ä¸º01234|
-|IICèŠ¯ç‰‡é©±åŠ¨|iicscl|I2C SCL ç®¡è„šå·|æ˜¯|IICé©±åŠ¨å¿…å¡«|
-|IICèŠ¯ç‰‡é©±åŠ¨|iicsda|I2C DATA ç®¡è„šå·|æ˜¯|IICé©±åŠ¨å¿…å¡«|
-|IICèŠ¯ç‰‡é©±åŠ¨|ctrl_pin|æ§åˆ¶å¼•è„š|æ˜¯|SM16726Bå¿…å¡«|
-|IICèŠ¯ç‰‡é©±åŠ¨|ctrl_lv|ç”µå¹³æ§åˆ¶é…ç½®|æ˜¯|SM16726Bå¿…å¡«<br>1:é«˜ç”µå¹³æœ‰æ•ˆ<br>0:ä½ç”µå¹³æœ‰æ•ˆ|
-|IICèŠ¯ç‰‡é©±åŠ¨|campere|å½©å…‰æ¨¡å¼å•è·¯æœ€å¤§ç”µæµ|æ˜¯|sm2135Eé©±åŠ¨å¿…å¡«<br>èŒƒå›´ï¼š10~45ï¼Œé—´è·ï¼š5ï¼Œé»˜è®¤å€¼ï¼š20|
-|IICèŠ¯ç‰‡é©±åŠ¨|wampere|ç™½å…‰æ¨¡å¼å•è·¯æœ€å¤§ç”µæµ|æ˜¯|sm2135Eé©±åŠ¨å¿…å¡«<br>èŒƒå›´ï¼š10~80ï¼Œé—´è·ï¼š5ï¼Œé»˜è®¤å€¼ï¼š30|
-||crc|æ ¡éªŒ|å¦|æ— éœ€æ”¹åŠ¨,ä¸æ ¡éªŒ|
+|json head|name|¹Ì¼ş±êÊ¶Ãû|ÊÇ|1.Ê×ÏÈÔÚÍ¿Ñ»Æ½Ì¨´´½¨¹Ì¼ş±êÊ¶Ãû<br>2.ÉÏ´«µÄ¹Ì¼şÃû³ÆÓëÍ¿Ñ»Æ½Ì¨Ò»ÖÂ|
+|json head|description|ÅäÖÃ¹¦ÄÜ|¿É|½öÓÃÓÚÃèÊö¸Ã¹Ì¼ş|
+|json head|version|¹Ì¼ş°æ±¾|ÊÇ|ĞÎÊ½x.x|
+|json head|ic|Ğ¾Æ¬ĞÍºÅ|·ñ|tlsr825x|
+|json head|hardware|Ó²¼şÄ£¿é|·ñ|TYBT3L|
+|json head|log|´òÓ¡µ÷ÊÔĞÅÏ¢|¿É|1.µ÷ÊÔÊÇ¿ÉÒÔÎª1,½«logĞÅÏ¢Êä³ö<br>2.³ÉÆ·¹Ì¼ş±ØĞëÉèÖÃÎª0|
+|json head|oem|¹Ì¼şĞÎÊ½|·ñ|½¨ÒéÎª1|
+|json head|json_config|json¿ÉÅä|·ñ|±ØĞëÎª0|
+|json head|kind|Éè±¸ÄÜÁ¦|·ñ|Ä¬ÈÏ¼´¿É|
+|json head|pid|pidÃû³Æ|ÊÇ|½¨ÒéÌîĞ´¹Ì¼şkeyÃû³Æ|
+|json head|vendorid|Æ·ÀàĞÅÏ¢|ÊÇ|1.Ò»Â·µÆ:1011<br>2.Á½Â·µÆ:1012<br>3.ÈıÂ·µÆ:1013<br>4.ËÄÂ·µÆ:1014<br>5.ÎåÂ·µÆ:1015|
+||Jsonver|jsonÅäÖÃ°æ±¾|·ñ|Ä¬ÈÏ¼´¿É|
+||category|Éè±¸ÄÜÁ¦|ÊÇ|Óëkind±£³ÖÒ»ÖÂ|
+||module|Ä£¿éÑ¡ĞÍ|ÊÇ|1,BT8C<br>2.·ÇBT8CÄ£¿éÌîBT3L|
+||cmod|µÆÀàÑ¡ĞÍ|ÊÇ|1.Ò»Â·µÆ:c<br>2.Á½Â·µÆ:cw<br>3.ÈıÂ·µÆ:rgb<br>4.ËÄÂ·µÆ:rgbc<br>5.ÎåÂ·µÆ:rgbcw|
+||dmod|Çı¶¯Ñ¡ĞÍ|ÊÇ|0:PWMÇı¶¯<br>1:SM16726B<br>2:SM2135E|
+||cwtype|°×¹âµ÷½ÚÇı¶¯·½Ê½|ÊÇ|0:CW - Àä¹â/Å¯¹â<br>1:CCT - ÁÁ¶È/É«ÎÂ|
+||onoffmode|¿ª¹Ø½¥±ä|ÊÇ|0:¿ª¹ØÊ±ÓĞ½¥±ä<br>1:¿ª¹ØÊ±ÎŞ½¥±ä|
+||pmemory|¶Ïµç¼ÇÒä|ÊÇ|0:ÎŞ¶Ïµç¼ÇÒä<br>1:ÓĞ¶Ïµç¼ÇÒä|
+||defcolor|ÅäÍø³É¹¦ºóÑÕÉ«|ÊÇ|²Ê¹â¿ÉÑ¡:r/g/b<br>°×¹â¿ÉÑ¡:c|
+||defbright|ÅäÍø³É¹¦ºóÁÁ¶È|ÊÇ|·¶Î§£º10~100|
+||deftemp|ÅäÍø³É¹¦ºóÉ«ÎÂ|ÊÇ|defcolorÎªcÊ±ÓĞĞ§<br>·¶Î§£º0~100|
+||cwmaxp|ÀäÅ¯»ì¹â×î´ó¹¦ÂÊ|ÊÇ|Ä¬ÈÏÎª100<br>·¶Î§£º100~200£¬¼ä¾à£º10|
+||brightmin|°×¹âÁÁ¶È×îĞ¡Öµ|ÊÇ|·¶Î§£º1~100£¬¼ä¾à£º1|
+||brightmax|°×¹âÁÁ¶È×î´óÖµ|ÊÇ|·¶Î§£º1~100£¬¼ä¾à£º1|
+||colormin|²Ê¹âÁÁ¶È×îĞ¡Öµ|ÊÇ|·¶Î§£º1~100£¬¼ä¾à£º1|
+||colormax|²Ê¹âÁÁ¶È×î´óÖµ|ÊÇ|·¶Î§£º1~100£¬¼ä¾à£º1|
+||wfcfg|Ê×´ÎÅäÍø´¥·¢·½Ê½|ÊÇ||
+||rstmode|´¥·¢ÅäÍø·½Ê½|·ñ|Ä¬ÈÏÎª0|
+||rstnum|Í¨¶Ïµç¸´Î»´ÎÊı|ÊÇ|·¶Î§£º3~10£¬¼ä¾à£º1|
+||rstcor|ÅäÍøÊ±ÌáĞÑÑÕÉ«|ÊÇ|²Ê¹â¿ÉÑ¡:r/g/b<br>°×¹â¿ÉÑ¡:c|
+||rstbr|ÅäÍøÊ±ÌáĞÑÁÁ¶È|ÊÇ|·¶Î§£º10~100|
+||rsttemp|ÅäÍøÊ±ÌáĞÑÉ«ÎÂ|ÊÇ|rstcorÎªcÊ±ÓĞĞ§<br>·¶Î§£º0~100|
+||pairt|ÅäÍøÌáĞÑµÄÊ±¼ä|ÊÇ|·¶Î§£º6~600<br>×¢:ºôÎüÌáĞÑÊ±,Ê±¼ä½¨ÒéÎª6,ºôÎüÆÚ¼ä»áÓ°ÏìGATTÅäÍø|
+||notdisturb|ÎğÈÅÄ£Ê½|ÊÇ|0:¹Ø±Õ<br>1:¿ªÆô|
+|PWM|pmwhz|PWM ÆµÂÊ|ÊÇ|·¶Î§£º500~20000£»¼ä¾à£º100|
+|PWM|r_pin/g_pin/<br>b_pin/c_pin/<br>w_pin|rgbcwÒı½Å|ÊÇ|ÌîĞ´0~14,Òı½Å¶ÔÓ¦¹ØÏµÈçÏÂ<br>0:GPIO_PB1<br>1:GPIO_PB7<br>2:GPIO_PB5<br>3:GPIO_PB4<br>4:GPIO_PA0<br>6:GPIO_PC0<br>7:GPIO_PC2<br>8:GPIO_PC3<br>9:GPIO_PD2<br>10:GPIO_PD7<br>11:GPIO_PC4<br>12:GPIO_PB0<br>13:GPIO_PC5<br>14:GPIO_PC1|
+|PWM|r_lv/g_lv/<br>b_lv/c_lv/<br>w_lv|ÓĞĞ§µçÆ½|ÊÇ|Ä¬ÈÏÎª1<br>ËùÓĞÒı½Å±ØĞë±£³ÖÒ»ÖÂ<br>1:¸ßµçÆ½µãÁÁ<br>0:µÍµçÆ½µãÁÁ|
+|IICĞ¾Æ¬Çı¶¯|iicr/iicg/iicb<br>/iicc/iicw|rgbcwÍ¨µÀ|ÊÇ|ÅäÖÃÎª01234|
+|IICĞ¾Æ¬Çı¶¯|iicscl|I2C SCL ¹Ü½ÅºÅ|ÊÇ|IICÇı¶¯±ØÌî|
+|IICĞ¾Æ¬Çı¶¯|iicsda|I2C DATA ¹Ü½ÅºÅ|ÊÇ|IICÇı¶¯±ØÌî|
+|IICĞ¾Æ¬Çı¶¯|ctrl_pin|¿ØÖÆÒı½Å|ÊÇ|SM16726B±ØÌî|
+|IICĞ¾Æ¬Çı¶¯|ctrl_lv|µçÆ½¿ØÖÆÅäÖÃ|ÊÇ|SM16726B±ØÌî<br>1:¸ßµçÆ½ÓĞĞ§<br>0:µÍµçÆ½ÓĞĞ§|
+|IICĞ¾Æ¬Çı¶¯|campere|²Ê¹âÄ£Ê½µ¥Â·×î´óµçÁ÷|ÊÇ|sm2135EÇı¶¯±ØÌî<br>·¶Î§£º10~45£¬¼ä¾à£º5£¬Ä¬ÈÏÖµ£º20|
+|IICĞ¾Æ¬Çı¶¯|wampere|°×¹âÄ£Ê½µ¥Â·×î´óµçÁ÷|ÊÇ|sm2135EÇı¶¯±ØÌî<br>·¶Î§£º10~80£¬¼ä¾à£º5£¬Ä¬ÈÏÖµ£º30|
+||crc|Ğ£Ñé|·ñ|ÎŞĞè¸Ä¶¯,²»Ğ£Ñé|
 
-# è°ƒè¯•æŠ€å·§
-## ç¯å¢ƒæ­å»º(ä»¥æ³°å‡Œä¸ºä¾‹)
-### IDEå®‰è£…
-Telinkå®˜æ–¹è®ºå›ä¸»é¡µï¼šhttp://wiki.telink-semi.cn/wiki/IDE-and-Tools/IDE-for-TLSR8-Chips/ -> Telink IDEï¼ˆé›†æˆå¼€å‘ç¯å¢ƒï¼‰-> æŒ‰æŒ‡å¯¼è¿›è¡Œå®‰è£…
+# µ÷ÊÔ¼¼ÇÉ
+## »·¾³´î½¨(ÒÔÌ©ÁèÎªÀı)
+### IDE°²×°
+Telink¹Ù·½ÂÛÌ³Ö÷Ò³£ºhttp://wiki.telink-semi.cn/wiki/IDE-and-Tools/IDE-for-TLSR8-Chips/ -> Telink IDE£¨¼¯³É¿ª·¢»·¾³£©-> °´Ö¸µ¼½øĞĞ°²×°
 
-å°† doc\tools\jq-win64.exe æ”¾å…¥ C:\TelinkSDK\bin\
+½« doc\tools\jq-win64.exe ·ÅÈë C:\TelinkSDK\bin\
 
-å°†ä¸‹é¢è·¯å¾„åŠ å…¥ç³»ç»Ÿç¯å¢ƒå˜é‡ä¸­ï¼š
+½«ÏÂÃæÂ·¾¶¼ÓÈëÏµÍ³»·¾³±äÁ¿ÖĞ£º
 
 C:\TelinkSDK\opt\Vim\vim73\;	
 C:\TelinkSDK\opt\tc32\bin\;	
 C:\TelinkSDK\bin\;	
 C:\TelinkSDK\opt\tc32\tools\;
 
-### çƒ§å†™è°ƒè¯•åŠ©æ‰‹å®‰è£…
-Telinkå®˜æ–¹è®ºå›ä¸»é¡µï¼šhttp://wiki.telink-semi.cn/wiki/IDE-and-Tools/Burning-and-Debugging-Tools-for-all-Series/ -> Burning and Debugging Tools (BDT) -> ä¸‹è½½è§£å‹å³å¯
+### ÉÕĞ´µ÷ÊÔÖúÊÖ°²×°
+Telink¹Ù·½ÂÛÌ³Ö÷Ò³£ºhttp://wiki.telink-semi.cn/wiki/IDE-and-Tools/Burning-and-Debugging-Tools-for-all-Series/ -> Burning and Debugging Tools (BDT) -> ÏÂÔØ½âÑ¹¼´¿É
 
-### gitå®‰è£…
-ä» https://git-scm.com/download/win ä¸‹è½½ git-for-win å¹¶å®‰è£…ï¼ˆä¸ç†Ÿæ‚‰çš„äººå»ºè®®å…¨éƒ¨é‡‡ç”¨é»˜è®¤å®‰è£…,å¦‚æœç”µè„‘ä¸Šå·²ç»æœ‰git-bashä¹‹ç±»çš„å¯ä»¥è¿è¡Œshè„šæœ¬çš„è½¯ä»¶å¯ä»¥ä¸ç”¨å®‰è£…ï¼‰
+### git°²×°
+´Ó https://git-scm.com/download/win ÏÂÔØ git-for-win ²¢°²×°£¨²»ÊìÏ¤µÄÈË½¨ÒéÈ«²¿²ÉÓÃÄ¬ÈÏ°²×°,Èç¹ûµçÄÔÉÏÒÑ¾­ÓĞgit-bashÖ®ÀàµÄ¿ÉÒÔÔËĞĞsh½Å±¾µÄÈí¼ş¿ÉÒÔ²»ÓÃ°²×°£©
 
-## ä¸Šæ‰‹
+## ÉÏÊÖ
 ### build
-åˆ©ç”¨ app/mesh_common/_build ä¸­çš„ run.sh è„šæœ¬ï¼Œå¯ä»¥å®ç°ç¼–è¯‘ã€çƒ§å½•ï¼šï¼ˆå¦‚æ—  _build æ–‡ä»¶ï¼Œåˆ™åœ¨common/tools ä¸­è¿è¡Œï¼ˆä¿®æ”¹ç›¸åº”æ–‡ä»¶åç§°ï¼‰ bash cmake.sh mesh_light tlsr825x_smesh light_profile ç”Ÿæˆ _build æ–‡ä»¶ï¼‰
+ÀûÓÃ app/mesh_common/_build ÖĞµÄ run.sh ½Å±¾£¬¿ÉÒÔÊµÏÖ±àÒë¡¢ÉÕÂ¼£º£¨ÈçÎŞ _build ÎÄ¼ş£¬ÔòÔÚcommon/tools ÖĞÔËĞĞ£¨ĞŞ¸ÄÏàÓ¦ÎÄ¼şÃû³Æ£© bash cmake.sh mesh_light tlsr825x_smesh light_profile Éú³É _build ÎÄ¼ş£©
 
 ```
 bash run.sh build/flash [app_config.json]
 ```
 
-è¯¥è„šæœ¬ä¼šå°† [app_config.json] è½¬å˜ä¸º _build/base_oem_config.h, å…¶ä¸­æœ‰å¤§é‡çš„å®å®šä¹‰ï¼Œç”¨äºè®©åŒä¸€ä¸ªåº”ç”¨ä»£ç ï¼Œèƒ½ç”Ÿæˆä¸åŒçš„åº”ç”¨ç¨‹åºï¼ˆå¦‚ï¼šåªéœ€è¦æ”¹åŠ¨ç”Ÿæˆå›ºä»¶çš„åå­—ã€ç‰ˆæœ¬å·ã€PIDç­‰ä¿¡æ¯æ—¶ï¼Œä¸éœ€è¦æ”¹åŠ¨ä»£ç ï¼Œåªéœ€è¦æ”¹åŠ¨è¯¥ json é…ç½®æ–‡ä»¶ï¼‰ã€‚
+¸Ã½Å±¾»á½« [app_config.json] ×ª±äÎª _build/base_oem_config.h, ÆäÖĞÓĞ´óÁ¿µÄºê¶¨Òå£¬ÓÃÓÚÈÃÍ¬Ò»¸öÓ¦ÓÃ´úÂë£¬ÄÜÉú³É²»Í¬µÄÓ¦ÓÃ³ÌĞò£¨Èç£ºÖ»ĞèÒª¸Ä¶¯Éú³É¹Ì¼şµÄÃû×Ö¡¢°æ±¾ºÅ¡¢PIDµÈĞÅÏ¢Ê±£¬²»ĞèÒª¸Ä¶¯´úÂë£¬Ö»ĞèÒª¸Ä¶¯¸Ã json ÅäÖÃÎÄ¼ş£©¡£
 
-å‡¡æ˜¯èƒ½é€šè¿‡ä¿®æ”¹ [app_config.json] èƒ½æ»¡è¶³å®¢æˆ·éœ€æ±‚ï¼Œå°½é‡ä¸è¦ä¿®æ”¹APPä»£ç ï¼Œè¿™æ ·äº§å‡ºçš„å›ºä»¶é£é™©æ€§å°ï¼›å‡¡æ˜¯ä¸èƒ½é€šè¿‡ä¿®æ”¹ [app_config.json]æ»¡è¶³å®¢æˆ·éœ€æ±‚çš„ï¼Œå»ºè®®é‡‡ç”¨å¤åˆ¶ä¸€ä¸ªç›¸ä¼¼çš„ app_name è¿›è¡Œæ”¹åŠ¨å¼€å‘ã€‚ä¸€èˆ¬æƒ…å†µä¸å»ºè®®äº§ç”Ÿå¤§é‡åšç®€å•ä¿®æ”¹ä¸åŒçš„ appï¼Œè€Œæ¨èè€ƒè™‘åŠ å¼º [app_config.json] èƒ½åŠ›ã€‚
+·²ÊÇÄÜÍ¨¹ıĞŞ¸Ä [app_config.json] ÄÜÂú×ã¿Í»§ĞèÇó£¬¾¡Á¿²»ÒªĞŞ¸ÄAPP´úÂë£¬ÕâÑù²ú³öµÄ¹Ì¼ş·çÏÕĞÔĞ¡£»·²ÊÇ²»ÄÜÍ¨¹ıĞŞ¸Ä [app_config.json]Âú×ã¿Í»§ĞèÇóµÄ£¬½¨Òé²ÉÓÃ¸´ÖÆÒ»¸öÏàËÆµÄ app_name ½øĞĞ¸Ä¶¯¿ª·¢¡£Ò»°ãÇé¿ö²»½¨Òé²úÉú´óÁ¿×ö¼òµ¥ĞŞ¸Ä²»Í¬µÄ app£¬¶øÍÆ¼ö¿¼ÂÇ¼ÓÇ¿ [app_config.json] ÄÜÁ¦¡£
 ```
   $ cd app/mesh_common/_build
 
   $ bash run.sh build 5_bt3l-cfg_V3.1.json 
 ```
 ### flash
-1)å°†çƒ§å†™å™¨çš„SWMå¼•è„šä¸å¼€å‘æ¿çš„SWSå¼•è„šç›¸è¿ï¼Œçƒ§å†™å™¨é€šè¿‡ USB è¿æ¥åˆ°ç”µè„‘ä¸Šï¼Œå¼€å‘æ¿å•ç‹¬ä¾›ç”µï¼ˆä¿æŒå…±åœ°ï¼‰ï¼›
+1)½«ÉÕĞ´Æ÷µÄSWMÒı½ÅÓë¿ª·¢°åµÄSWSÒı½ÅÏàÁ¬£¬ÉÕĞ´Æ÷Í¨¹ı USB Á¬½Óµ½µçÄÔÉÏ£¬¿ª·¢°åµ¥¶À¹©µç£¨±£³Ö¹²µØ£©£»
 
-2ï¼‰æ‰“å¼€ Telink çƒ§å†™è°ƒè¯•åŠ©æ‰‹ (BTD)ï¼Œé€‰æ‹© 8258 èŠ¯ç‰‡ï¼Œç‚¹å‡» SWS åˆå§‹é…ç½®çƒ§å†™å™¨ï¼ˆè®©çƒ§å†™å™¨å¯ä»¥çƒ§å½• 8258 å‹å·èŠ¯ç‰‡ï¼Œå¾€å¾€åªéœ€è¦ SWS ä¸€æ¬¡å³å¯ï¼‰ï¼š
+2£©´ò¿ª Telink ÉÕĞ´µ÷ÊÔÖúÊÖ (BTD)£¬Ñ¡Ôñ 8258 Ğ¾Æ¬£¬µã»÷ SWS ³õÊ¼ÅäÖÃÉÕĞ´Æ÷£¨ÈÃÉÕĞ´Æ÷¿ÉÒÔÉÕÂ¼ 8258 ĞÍºÅĞ¾Æ¬£¬ÍùÍùÖ»ĞèÒª SWS Ò»´Î¼´¿É£©£º
 
-3ï¼‰åœ¨ Git Bash ä¸­è¾“å…¥ï¼štcdb.exe rstçœ‹åˆ°ä¸‹é¢çš„ç»“æœï¼Œè¡¨æ˜å¾…çƒ§å†™æ¿å­å·²ç»æˆåŠŸè¿æ¥åˆ°çƒ§å†™æ¿å­ä¸Šï¼š
+3£©ÔÚ Git Bash ÖĞÊäÈë£ºtcdb.exe rst¿´µ½ÏÂÃæµÄ½á¹û£¬±íÃ÷´ıÉÕĞ´°å×ÓÒÑ¾­³É¹¦Á¬½Óµ½ÉÕĞ´°å×ÓÉÏ£º
 ```
   $ tcdb.exe rst
     Slave MCU Reset
 ```
 
-ä¸Šé¢å‡†å¤‡å·¥ä½œåšå¥½åï¼Œå¯ä»¥ç›´æ¥åˆ©ç”¨ run.sh å°† bin æ–‡ä»¶çƒ§å½•åˆ°å¼€å‘æ¿ï¼š
+ÉÏÃæ×¼±¸¹¤×÷×öºÃºó£¬¿ÉÒÔÖ±½ÓÀûÓÃ run.sh ½« bin ÎÄ¼şÉÕÂ¼µ½¿ª·¢°å£º
 ```
 $ bash run.sh flash 5_bt3l-cfg_V3.1.json 
 ```
-## ç”³è¯· PID å’Œæˆæƒç 
-æˆæƒç æ‰¾å¯¹åº”çš„äº§å“ç»ç†ï¼Œæ‰€æœ‰è®¾å¤‡å¿…é¡»æˆæƒæ‰èƒ½é…ç½‘ä½¿ç”¨ã€‚
+## ÉêÇë PID ºÍÊÚÈ¨Âë
+ÊÚÈ¨ÂëÕÒ¶ÔÓ¦µÄ²úÆ·¾­Àí£¬ËùÓĞÉè±¸±ØĞëÊÚÈ¨²ÅÄÜÅäÍøÊ¹ÓÃ¡£
 
-ç”³è¯· PID ï¼š
+ÉêÇë PID £º
 
-1)ç™»å½•æ¶‚é¸¦æ™ºèƒ½å¹³å°ï¼ˆhttps://iot.tuya.com/ï¼‰åˆ›å»ºäº§å“ï¼›
+1)µÇÂ¼Í¿Ñ»ÖÇÄÜÆ½Ì¨£¨https://iot.tuya.com/£©´´½¨²úÆ·£»
 
-2)ä¾‹å¦‚é€‰æ‹©å…‰æºã€è“ç‰™ Mesh(SIG) ã€å½©ç¯äº”è·¯ (RGBCW)_SIG ï¼Œè¾“å…¥äº§å“åç§°ï¼Œåˆ›å»ºäº§å“ï¼›
+2)ÀıÈçÑ¡Ôñ¹âÔ´¡¢À¶ÑÀ Mesh(SIG) ¡¢²ÊµÆÎåÂ· (RGBCW)_SIG £¬ÊäÈë²úÆ·Ãû³Æ£¬´´½¨²úÆ·£»
 
-3)æ·»åŠ åŠŸèƒ½ï¼Œç¡®å®šï¼ŒAPPé¢æ¿é…ç½®ï¼Œé€‰æ‹©æ¨¡æ¿ï¼›
+3)Ìí¼Ó¹¦ÄÜ£¬È·¶¨£¬APPÃæ°åÅäÖÃ£¬Ñ¡ÔñÄ£°å£»
 
-4)ç¡¬ä»¶è°ƒè¯•ï¼Œé€‰æ‹©ç›¸åº”å¼€å‘æ¨¡ç»„
+4)Ó²¼şµ÷ÊÔ£¬Ñ¡ÔñÏàÓ¦¿ª·¢Ä£×é
 
-5)äº‘ç«¯é…ç½®
+5)ÔÆ¶ËÅäÖÃ
 
-æ³¨ï¼šéœ€å°†æµç¨‹èµ°åˆ° äº‘ç«¯é…ç½® è¿™æ­¥ï¼ŒPID çš„åŠŸèƒ½æ‰å®Œå…¨å®ç°ï¼Œå¦åˆ™å°†å‡ºç°ä¸€äº›å°é—®é¢˜ã€‚
+×¢£ºĞè½«Á÷³Ì×ßµ½ ÔÆ¶ËÅäÖÃ Õâ²½£¬PID µÄ¹¦ÄÜ²ÅÍêÈ«ÊµÏÖ£¬·ñÔò½«³öÏÖÒ»Ğ©Ğ¡ÎÊÌâ¡£
 
-## json ä½ç½®æ”¾ç½®å›ºä»¶ keyæˆ–è€…äº§å“ PID
-åŒºåˆ«ï¼šæ”¾ç½®å›ºä»¶ key å¯ä»¥å¯¹åº”å¤šä¸ª PIDï¼Œå¯¹åº”æœ‰å¤šç§äº§å“ï¼›æ”¾ç½®äº§å“ PID åªèƒ½å¯¹åº”ä¸€ç§äº§å“ã€‚
+## json Î»ÖÃ·ÅÖÃ¹Ì¼ş key»òÕß²úÆ· PID
+Çø±ğ£º·ÅÖÃ¹Ì¼ş key ¿ÉÒÔ¶ÔÓ¦¶à¸ö PID£¬¶ÔÓ¦ÓĞ¶àÖÖ²úÆ·£»·ÅÖÃ²úÆ· PID Ö»ÄÜ¶ÔÓ¦Ò»ÖÖ²úÆ·¡£
