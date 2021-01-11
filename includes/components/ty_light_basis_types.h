@@ -44,6 +44,8 @@ typedef enum
     COLOR_MODE,
     SCENE_MODE,
     MUSIC_MODE,
+    /*-------20210106 wwpc----------*/
+    LUTEC_MODE,
     MODE_MAX,
 }LIGHT_MODE_E;
 

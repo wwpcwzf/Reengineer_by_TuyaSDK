@@ -17,6 +17,9 @@
 #include "app_light_cmd.h"
 #include "app_common.h"
 
+//--------------------------------20210105 wwpc
+#include "wwpc_xm_camera.h"
+
 
 #define     F_HEAD1                     0x00
 #define     F_HEAD2                     0x01
@@ -142,7 +145,9 @@ void app_uart_run(void){
         app_mesh_uart_write(CMD_TY_UART_FEA_SERVER_MESH_STA,&work_state,1); 
     }
 #endif
-    app_uart_server_run();//解析FIFO中的数据，并调用相应的处理函数
+    //--------------------------------20210105 wwpc
+    //app_uart_server_run();//解析FIFO中的数据，并调用相应的处理函数
+    lutec_xm_data();//解析串口数据
 }
 
 

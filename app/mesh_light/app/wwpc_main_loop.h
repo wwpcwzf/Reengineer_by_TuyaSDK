@@ -9,6 +9,7 @@
 #define _WWPC_MAIN_LOOP_H
 
 //=========================ÒýÓÃ=================================
+#include "wwpc_config.h"
 
 
 
@@ -26,11 +27,11 @@
 
 
 //=========================ÉêÃ÷=================================
-void LUTEC_MainLoop(void);
+void lutec_main_loop(void);
 
+void lutec_save_data_setvariable(LIGHT_CUST_DATA_FLASH_T *tSaveCustData);
 
-
-
+void lutec_read_data_setvariable(LIGHT_CUST_DATA_FLASH_T tReadCustData);
 
 
 

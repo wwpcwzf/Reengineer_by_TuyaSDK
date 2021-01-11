@@ -9,7 +9,7 @@
 #define _WWPC_LIGHT_CONTROL_H
 
 //=========================ÒýÓÃ=================================
-
+#include "wwpc_config.h"
 
 
 
@@ -26,8 +26,9 @@
 
 
 //=========================ÉêÃ÷=================================
-
-
+void lutec_protocol_dp_data(uint8_t *par, int par_len);
+void lutec_scenes_start(void);
+void lutec_scenes_runing(void);
 
 
 

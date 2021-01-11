@@ -17,6 +17,8 @@
 #include "ty_light_basis_tools.h"
 #include "ty_light_save_user_flash.h"
 
+#include "wwpc_main_loop.h"
+
 u8 light_not_disturb;
 extern LIGHT_MDEV_TEST_DATA_FLASH_T tProdResult;
 /**
@@ -574,6 +576,8 @@ OPERATE_LIGHT app_light_ctrl_data_auto_save(IN LIGHT_FLASH_SAVE_TYPE_E eDataType
 		case TYPE_USER_DATA:{ 
                 LIGHT_CUST_DATA_FLASH_T tSaveCustData;
                 memset(&tSaveCustData, 0, sizeof(LIGHT_CUST_DATA_FLASH_T));
+                //-----------------------------------20210107 wwpc
+                lutec_save_data_setvariable(&tSaveCustData);
             #if (LIGHT_CFG_3IN1_SAVE == 1) 
                 ty_light_save_user_flash_open_appdata();
                 ty_light_save_user_flash_write_3in1_data(TYPE_USER_DATA,&tSaveCustData);
@@ -664,10 +668,16 @@ OPERATE_LIGHT app_light_ctrl_data_auto_read(IN LIGHT_FLASH_SAVE_TYPE_E eDataType
                 LIGHT_CUST_DATA_FLASH_T tReadCustData;
                 memset(&tReadCustData, 0, sizeof(LIGHT_CUST_DATA_FLASH_T));
             #if (LIGHT_CFG_3IN1_SAVE == 1) 
-                ty_light_save_user_flash_read_3in1_data(TYPE_USER_DATA,&tReadCustData);
+                opRet = ty_light_save_user_flash_read_3in1_data(TYPE_USER_DATA, &tReadCustData);
             #else
-                ty_light_save_user_flash_read_data(TYPE_USER_DATA,&tReadCustData);
+                opRet = ty_light_save_user_flash_read_data(TYPE_USER_DATA, &tReadCustData);
             #endif
+            //--------------------------------20210107  wwpc
+                if( LIGHT_OK != opRet ) {
+                    TY_LOG_ERR("Read data error!");
+                    return LIGHT_COM_ERROR;
+                }
+                lutec_read_data_setvariable(tReadCustData);
             }
 		    break;
 		default:

@@ -166,6 +166,9 @@ typedef struct
  * @brief Light custumer save structure
  */
 typedef struct {
+    //------------------------------------20210107 wwpc
+    u8 lutec_wifi_name[64];
+    u8 lutec_wifi_passward[64];
 }LIGHT_CUST_DATA_FLASH_T;
 
 

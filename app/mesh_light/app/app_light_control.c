@@ -132,6 +132,10 @@ OPERATE_LIGHT app_light_ctrl_proc(void)
                     params.eMode = JUMP_MODE;
                     ty_light_gradual_ctrl_start(&params);
                     break;
+                //-----------------------------20210106 wwpc
+                case LUTEC_MODE: //自定义场景
+                    lutec_scenes_start();
+                    break;
                     
                 default:
                     break;

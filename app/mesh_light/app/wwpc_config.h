@@ -9,9 +9,9 @@
 #define _WWPC_CONFIG_H
 
 //=========================引用=================================
+#include <stdint.h>
 
-
-
+#include "ty_light_save_user_flash.h"
 
 //==========================宏==================================
 #define LUTEC_DEBUG_UART_ENABLE           1  //调试串口输出开关

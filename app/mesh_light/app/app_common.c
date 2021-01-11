@@ -30,6 +30,7 @@
 
 //--------------------------------20210105 wwpc
 #include "wwpc_main_loop.h"
+#include "wwpc_light_control.h"
 
 
 #define TUYA_PUB_ADDR 0xD000
@@ -183,7 +184,7 @@ void mesh_app_init(void){
 void mesh_main_run(void){
     app_light_ctrl_loop();
     //-------------------------20210105 wwpc
-    LUTEC_MainLoop();
+    lutec_main_loop();
 }
 
 
@@ -345,6 +346,8 @@ void app_tuya_vendor_light_dp_data(u8 *par, int par_len){
             }
             break;
         default:
+            //--------------------------------20210105 wwpc
+           lutec_protocol_dp_data(par, par_len);
             break;
     }
 }
