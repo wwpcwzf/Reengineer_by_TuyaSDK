@@ -347,7 +347,7 @@ void app_tuya_vendor_light_dp_data(u8 *par, int par_len){
             break;
         default:
             //--------------------------------20210105 wwpc
-           lutec_protocol_dp_data(par, par_len);
+            lutec_protocol_dp_data(par, par_len);
             break;
     }
 }
@@ -499,27 +499,27 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
             }
             break;
         case TUYA_LIGHT_CTL_TEMP_SET:
-        case TUYA_LIGHT_CTL_TEMP_SET_NOACK:{
-
-            if(WHITE_MODE!=app_light_ctrl_data_mode_get_value()){
-                app_light_ctrl_data_mode_set(WHITE_MODE);
-            }
-
-            ty_mesh_cmd_light_ctl_temp_set_t *dev_msg_ctl = (ty_mesh_cmd_light_ctl_temp_set_t *)data;
-            //whether this function is available
-            //APP_DEBUG("temper set value %h",dev_msg_ctl->temp);
-
-            opRet = app_light_ctrl_data_temperature_set((u16)(((float)(dev_msg_ctl->temp-800))/19200.0f*1000));
-            if(TUYA_LIGHT_CTL_TEMP_SET == opcode)
+        case TUYA_LIGHT_CTL_TEMP_SET_NOACK:
             {
-                ty_mesh_cmd_light_ctl_temp_st_t up_msg_ctl;
-                up_msg_ctl.present_temp = dev_msg_ctl->temp;
-                up_msg_ctl.target_temp = up_msg_ctl.present_temp;
-                tuya_mesh_data_send(dst_addr, src_addr, TUYA_LIGHT_CTL_TEMP_STATUS, &up_msg_ctl, sizeof(ty_mesh_cmd_light_ctl_temp_st_t), 0, 1);
-            }
-            if(LIGHT_OK == opRet) {
-                bActiveFlag = TRUE;
-            }
+                if(WHITE_MODE!=app_light_ctrl_data_mode_get_value()){
+                    app_light_ctrl_data_mode_set(WHITE_MODE);
+                }
+
+                ty_mesh_cmd_light_ctl_temp_set_t *dev_msg_ctl = (ty_mesh_cmd_light_ctl_temp_set_t *)data;
+                //whether this function is available
+                //APP_DEBUG("temper set value %h",dev_msg_ctl->temp);
+
+                opRet = app_light_ctrl_data_temperature_set((u16)(((float)(dev_msg_ctl->temp-800))/19200.0f*1000));
+                if(TUYA_LIGHT_CTL_TEMP_SET == opcode)
+                {
+                    ty_mesh_cmd_light_ctl_temp_st_t up_msg_ctl;
+                    up_msg_ctl.present_temp = dev_msg_ctl->temp;
+                    up_msg_ctl.target_temp = up_msg_ctl.present_temp;
+                    tuya_mesh_data_send(dst_addr, src_addr, TUYA_LIGHT_CTL_TEMP_STATUS, &up_msg_ctl, sizeof(ty_mesh_cmd_light_ctl_temp_st_t), 0, 1);
+                }
+                if(LIGHT_OK == opRet) {
+                    bActiveFlag = TRUE;
+                }
             }
             break;
         case TUYA_LIGHT_CTL_GET:{
@@ -542,33 +542,34 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
             }
             break;
         case TUYA_LIGHT_HSL_SET:
-        case TUYA_LIGHT_HSL_SET_NOACK:{
-
-            if(COLOR_MODE!=app_light_ctrl_data_mode_get_value()){
-                app_light_ctrl_data_mode_set(COLOR_MODE);
-            }
-            
-            ty_mesh_cmd_light_hsl_set_t *dev_msg_hsl = (ty_mesh_cmd_light_hsl_set_t *)data;
-            //whether this function is available
-
-            if((dev_msg_hsl->lightness)<330)
+        case TUYA_LIGHT_HSL_SET_NOACK:
             {
-                dev_msg_hsl->lightness = 330;
-            }
-            
-            opRet = app_light_ctrl_data_hsl_set(dev_msg_hsl->hue, dev_msg_hsl->sat, dev_msg_hsl->lightness);
+                if(COLOR_MODE!=app_light_ctrl_data_mode_get_value()){
+                    app_light_ctrl_data_mode_set(COLOR_MODE);
+                }
+                
+                ty_mesh_cmd_light_hsl_set_t *dev_msg_hsl = (ty_mesh_cmd_light_hsl_set_t *)data;
+                //whether this function is available
 
-            if(TUYA_LIGHT_HSL_SET == opcode)
-            {
-                ty_mesh_cmd_light_hsl_st_t up_msg_hsl;
-                up_msg_hsl.hue = dev_msg_hsl->hue;
-                up_msg_hsl.sat = dev_msg_hsl->sat;
-                up_msg_hsl.lightness = dev_msg_hsl->lightness;
-                tuya_mesh_data_send(dst_addr, src_addr, TUYA_LIGHT_HSL_STATUS, &up_msg_hsl, sizeof(ty_mesh_cmd_light_hsl_st_t), 0, 1);
-            }
-            if(LIGHT_OK == opRet) {
-                bActiveFlag = TRUE;
-            }
+                if((dev_msg_hsl->lightness)<330)
+                {
+                    dev_msg_hsl->lightness = 330;
+                }
+                
+                opRet = app_light_ctrl_data_hsl_set(dev_msg_hsl->hue, dev_msg_hsl->sat, dev_msg_hsl->lightness);
+
+                if(TUYA_LIGHT_HSL_SET == opcode)
+                {
+                    ty_mesh_cmd_light_hsl_st_t up_msg_hsl;
+                    up_msg_hsl.hue = dev_msg_hsl->hue;
+                    up_msg_hsl.sat = dev_msg_hsl->sat;
+                    up_msg_hsl.lightness = dev_msg_hsl->lightness;
+                    tuya_mesh_data_send(dst_addr, src_addr, TUYA_LIGHT_HSL_STATUS, &up_msg_hsl, sizeof(ty_mesh_cmd_light_hsl_st_t), 0, 1);
+                }
+                if(LIGHT_OK == opRet) 
+                {
+                    bActiveFlag = TRUE;
+                }
             }
             break;
         case TUYA_LIGHT_HSL_GET:{
@@ -579,19 +580,19 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
             break;
   // vendor model cmd-----------------
         case TUYA_VD_TUYA_WTITE:
-        case TUYA_VD_TUYA_WRITE_NOACK:{
-
-            if((((data[0]==1)&&(data[1]==6))||((data[0]==2)&&(data_len<2))) && ((dst_addr & 0xC000) == 0xC000))//场景命令或者发场景模式 拿到地址
+        case TUYA_VD_TUYA_WRITE_NOACK:
             {
-                ty_light_scene_cmd_set_groupid(dst_addr);
-            }
-            ty_light_scene_cmd_set_ttl(ttl);
+                if((((data[0]==1)&&(data[1]==6))||((data[0]==2)&&(data_len<2))) && ((dst_addr & 0xC000) == 0xC000))//场景命令或者发场景模式 拿到地址
+                {
+                    ty_light_scene_cmd_set_groupid(dst_addr);
+                }
+                ty_light_scene_cmd_set_ttl(ttl);
 
-            app_tuya_vendor_set_light_data(src_addr, dst_addr,&(*data), data_len);
-            if(TUYA_VD_TUYA_WTITE == opcode)
-            {
-                tuya_mesh_data_send(dst_addr, src_addr, TUYA_VD_TUYA_DATA, &(*data), data_len, 0, 1);
-            } 
+                app_tuya_vendor_set_light_data(src_addr, dst_addr,&(*data), data_len);
+                if(TUYA_VD_TUYA_WTITE == opcode)
+                {
+                    tuya_mesh_data_send(dst_addr, src_addr, TUYA_VD_TUYA_DATA, &(*data), data_len, 0, 1);
+                } 
             }
         break;
         case TUYA_VD_TUYA_READ:{ 

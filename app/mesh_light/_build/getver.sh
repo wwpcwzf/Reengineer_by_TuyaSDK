@@ -8,7 +8,7 @@ echo "//common define">> $CONFIG_FILE
 echo "//-------------------------------------------">> $CONFIG_FILE
 echo "#define     FW_VERSION                \"9.7\"" >> $CONFIG_FILE
 echo "#define     FW_VERSION_HEX            0x3739" >> $CONFIG_FILE
-echo "#define     BUILD_TIME                \"2021-01-11-16:46:52\"" >> $CONFIG_FILE
+echo "#define     BUILD_TIME                \"2021-01-12-20:03:47\"" >> $CONFIG_FILE
 echo "#define     BUILD_FIRMNAME            \"oem_tlsr8250_lightcfg_pwm_ty\"" >> $CONFIG_FILE
 echo "#define     MESH_PID                  \"keyd9k4q\"" >> $CONFIG_FILE
 echo "#define     CONFIG_LOG_ON             0" >> $CONFIG_FILE

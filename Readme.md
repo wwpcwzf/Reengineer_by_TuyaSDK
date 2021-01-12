@@ -25,7 +25,8 @@
 &emsp;&emsp;B、蓝牙配置wifi & LUTEC自定义协议(蓝牙部分)：    
 &emsp;&emsp;&emsp;&emsp;app_common.c-->app_tuya_vendor_light_dp_data()-->lutec_protocol_dp_data()    
 &emsp;&emsp;C、简单网关(WiFi透传):    
-&emsp;&emsp;&emsp;&emsp;app_uart.c-->app_uart_run()-->lutec_xm_data()  
+&emsp;&emsp;&emsp;&emsp;收：app_uart.c-->app_uart_run()-->lutec_xm_data()  
+&emsp;&emsp;&emsp;&emsp;转发：
 &emsp;&emsp;D、调光：    
 &emsp;&emsp;&emsp;&emsp;          
 &emsp;&emsp;E、PIR功能：    
