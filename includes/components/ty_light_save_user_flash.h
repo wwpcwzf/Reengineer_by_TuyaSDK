@@ -28,11 +28,13 @@ extern "C" {
 
 #define SINGLE_SCENE_LEN 35
 #define ALL_SCENE_MAX 8
+
 u8 AllScene[ALL_SCENE_MAX][SINGLE_SCENE_LEN];
 
 #pragma pack(1)
- typedef enum
- {
+
+typedef enum
+{
 	TYPE_APP_DATA = 0,
 	TYPE_MDEV_DATA,
     TYPE_MEM_DATA,

@@ -38,6 +38,11 @@
 &emsp;&emsp;&emsp;&emsp;存：app_light_cmd.c-->app_light_ctrl_data_auto_save()-->lutec_save_data_setvariable()      
 &emsp;&emsp;&emsp;&emsp;取：app_light_cmd.c-->app_light_ctrl_data_auto_read()-->lutec_read_data_setvariable()    
 
+## 数据流(Interface)：
+&emsp;&emsp;Bluetooth下行：Mesh-->tuya_mesh_data_recv_callback()-->app_tuya_vendor_set_light_data()-->lutec_protocol_dp_data()  
+&emsp;&emsp;Bluetooth上行：lutec_protocol_dp_data()-->app_light_vendor_data_publish()-->lutec_protocol_dp_data()    
+&emsp;&emsp;WiFi下行： 
+&emsp;&emsp;WiFi上行：
 
 
 

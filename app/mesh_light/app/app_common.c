@@ -40,7 +40,7 @@ u16 inquire_dst = 0;
 /**
 * @description: response light state after control in on-off model 
 * @param[in] {IN bool Onoff} control command: 1->on,0->off
-* @return: none
+* @return: none
 **/
 void app_light_ctrl_data_onoff_response(IN bool Onoff)
 {
@@ -54,9 +54,9 @@ void app_light_ctrl_data_onoff_response(IN bool Onoff)
 /**
 * @description: light data of vendor model send without ACK
 * @param[in] {IN u16 DstAddr} destination address
-* @param[in] {IN u8 VendorData} data of vendor model
+* @param[in] {IN u8 VendorData} data of vendor model 
 * @param[in] {IN u8 DataLen} data length
-* @return: none 
+* @return: none 
 **/
 void app_light_vendor_data_publish(IN u16 DstAddr,IN u8 *VendorData,IN u8 DataLen)
 {
@@ -92,7 +92,7 @@ static void app_light_vendor_group_addr_inquire(uint16_t src_addr, uint16_t dst_
 * @description: mesh oem config init, and light params and light ctrldata init,
                 and enable timer for light ctrl gradual 
 * @param[in] none
-* @return: none 
+* @return: none 
 **/
 void mesh_oem_config_init(void ){
     APP_LOG("%s\r\n",__FUNCTION__);
@@ -129,7 +129,7 @@ void mesh_oem_config_init(void ){
 * @description: application init, perform a related operation on the light.
                 you can add some other application init at there.
 * @param[in] none
-* @return: none 
+* @return: none 
 **/
 void mesh_app_init(void){
     APP_LOG("%s\r\n",__FUNCTION__);
@@ -168,20 +168,23 @@ void mesh_app_init(void){
             }
         }
     }
-	    //产品测试初始化
+	//��Ʒ���Գ�ʼ��
     opRet = ty_light_mdev_light_prod_init();  /* prodution init */
     if(opRet != LIGHT_OK) {
         TY_LOG_ERR("Prod init error!");
         return;
     }
+    //-------------------------2021015 wwpc
+    lutec_main_init();
 }
 
 /**
 * @description: main application run, you can do something need loop at there
 * @param[in] none
-* @return: none 
+* @return: none 
 **/
-void mesh_main_run(void){
+void mesh_main_run(void)
+{
     app_light_ctrl_loop();
     //-------------------------20210105 wwpc
     lutec_main_loop();
@@ -191,7 +194,7 @@ void mesh_main_run(void){
 /**
 * @description: Restore initialization settings
 * @param[in] none
-* @return: none 
+* @return: none 
 **/
 void mesh_factory_reset(void){
     APP_LOG("%s\r\n",__FUNCTION__);
@@ -210,7 +213,7 @@ void mesh_factory_reset(void){
 * @description: tuya mdev test
 * @param[in] {uint8_t is_Authorized} if Authorized by tuya
 * @param[in] {uint8_t rssi} 
-* @return: none 
+* @return: none 
 **/
 void app_tuya_mdev_test(uint8_t is_Authorized, uint8_t rssi){
     APP_LOG("%s\r\n",__FUNCTION__);
@@ -219,7 +222,7 @@ void app_tuya_mdev_test(uint8_t is_Authorized, uint8_t rssi){
     OPERATE_LIGHT opRet = 1;
 	ty_light_mdev_prod_test_callback(is_Authorized,rssi);
 
-    //产品测试初始化
+    //��Ʒ���Գ�ʼ��
     //opRet = ty_light_mdev_light_prod_init();  /* prodution init */
     if(opRet != LIGHT_OK) {
         TY_LOG_ERR("Prod init error!");
@@ -233,13 +236,18 @@ void app_tuya_mdev_test(uint8_t is_Authorized, uint8_t rssi){
 * @param[in] {mesh_state_t stat} mesh state:
                    typedef enum{
                     }mesh_state_t;
-* @return: none 
+* @return: none 
 **/
 
 void mesh_state_callback(mesh_state_t stat){
-    OPERATE_LIGHT opRet = 1;
-    static char LastMeshStat = 0xFF;
+    //-------------------------20210116 wwpc
+    //OPERATE_LIGHT opRet = 1;
+    //static char LastMeshStat = 0xFF;
 
+    //-------------------------20210105 wwpc
+    lutec_mesh_state_callback(stat);
+    //-------------------------20210116 wwpc
+    #if 0
     if(LastMeshStat != stat) {
         TY_LOG_NOTICE("last mesh stat:%d, mesh stat %d",LastMeshStat,stat);
         switch(stat) {
@@ -272,6 +280,7 @@ void mesh_state_callback(mesh_state_t stat){
         }
         LastMeshStat = stat;
     }
+    #endif
 }
 
 /*--------------------------------
@@ -282,9 +291,10 @@ opcode
 * @description: tuya vendor light dp-data handle
 * @param[in] {u8 *par} data
 * @param[in] {int par_len} data length
-* @return: none 
+* @return: none 
 **/
 void app_tuya_vendor_light_dp_data(u8 *par, int par_len){
+    
     switch(par[1]){
         case VD_CMD_SCENE_DATA:{
                 if(SCENE_MODE!=app_light_ctrl_data_mode_get_value()){
@@ -346,8 +356,6 @@ void app_tuya_vendor_light_dp_data(u8 *par, int par_len){
             }
             break;
         default:
-            //--------------------------------20210105 wwpc
-            lutec_protocol_dp_data(par, par_len);
             break;
     }
 }
@@ -357,7 +365,7 @@ void app_tuya_vendor_light_dp_data(u8 *par, int par_len){
 * @description: tuya vendor light set-data handle
 * @param[in] {u8 *par} data
 * @param[in] {int par_len} data length
-* @return: none 
+* @return: none 
 **/
 void app_tuya_vendor_set_light_data(uint16_t src_addr, uint16_t dst_addr, u8 *par, int par_len){
     if(par_len < 2){
@@ -372,8 +380,17 @@ void app_tuya_vendor_set_light_data(uint16_t src_addr, uint16_t dst_addr, u8 *pa
     }
     else{
         switch(par[0]){
-            case 1:{
-                app_tuya_vendor_light_dp_data(par, par_len);
+            case 1:{  
+                //--------------------------------20210105 wwpc  
+                //app_tuya_vendor_light_dp_data(par, par_len);
+                if((par[1] >= 101) && (par[1] <= 128))//0x65--0x80
+                {
+                    lutec_protocol_bluetooth_dp(src_addr, dst_addr, par, par_len);
+                }
+                else 
+                {
+                    app_tuya_vendor_light_dp_data(par, par_len);
+                }
             }
             break;
             #if LIGHT_CFG_REMOTE_ENABLE
@@ -407,8 +424,8 @@ void app_tuya_vendor_set_light_data(uint16_t src_addr, uint16_t dst_addr, u8 *pa
 
 /**
 * @description: get uart reply addr
-* @param[in] { none}
-* @return:reply addr 
+* @param[in] { none}
+* @return:reply addr 
 **/
 u16 uart_reply_addr = 0;//use for the function of app_mesh_uart_upload
 u16 tuya_get_uart_reply_addr(void)
@@ -423,7 +440,7 @@ u16 tuya_get_uart_reply_addr(void)
 * @param[in] {uint8_t *data} data 
 * @param[in] {uint16_t data_len} data length
 * @param[in] {uint8_t ttl} transmit times
-* @return: none 
+* @return: none 
 **/
 void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t opcode, uint8_t *data, uint16_t data_len, uint8_t ttl)
 {
@@ -432,7 +449,6 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
         return;
     }
     uart_reply_addr = src_addr;
-
     APP_LOG_DUMP("recv data\r\n", data, data_len);
 
     OPERATE_LIGHT opRet = 1;
@@ -441,6 +457,7 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
     switch(opcode){
         case TUYA_G_ONOFF_SET:
         case TUYA_G_ONOFF_SET_NOACK:{
+
             mesh_cmd_g_onoff_set_t *dev_msg_onoff = (mesh_cmd_g_onoff_set_t *)data;
             APP_LOG("set switch %d",dev_msg_onoff->onoff);
 
@@ -452,10 +469,12 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
                 up_msg_onoff.target = up_msg_onoff.present;
                 tuya_mesh_data_send(dst_addr, src_addr, TUYA_G_ONOFF_STATUS, &up_msg_onoff, sizeof(ty_mesh_cmd_g_onoff_st_t), 0, 1);
             }
-            if(LIGHT_OK == opRet) {
+            if(LIGHT_OK == opRet) 
+            {
                 bActiveFlag = TRUE;
                 app_light_ctrl_data_countdown_set(0);
             }
+
             }
             break;
         case TUYA_G_ONOFF_GET:{
@@ -578,7 +597,7 @@ void tuya_mesh_data_recv_callback(uint16_t src_addr, uint16_t dst_addr, uint32_t
             tuya_mesh_data_send(dst_addr, src_addr, TUYA_LIGHT_HSL_STATUS, &up_msg_hsl, sizeof(ty_mesh_cmd_light_hsl_st_t), 0, 1);
             }
             break;
-  // vendor model cmd-----------------
+        // vendor model cmd----------------------------------------------------
         case TUYA_VD_TUYA_WTITE:
         case TUYA_VD_TUYA_WRITE_NOACK:
             {

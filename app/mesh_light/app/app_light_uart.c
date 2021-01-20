@@ -17,11 +17,11 @@
 * @param {u8 fur} feature
 * @param {u8 *params} input data
 * @param {u8 len} input data length
-*Â @return: none
+* @return: none
 **/
 void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len){
     switch(fur){
-        case CMD_TY_UART_FEA_SERVER_LIGHT_CONTROL:{ //ç¯åŠŸèƒ½:å¼€å…³,æ¨¡å¼,äº®åº¦,å†·æš–,å½©å…‰,éŸ³ä¹å¾‹åŠ¨
+        case CMD_TY_UART_FEA_SERVER_LIGHT_CONTROL:{ //µÆ¹¦ÄÜ:¿ª¹Ø,Ä£Ê½,ÁÁ¶È,ÀäÅ¯,²Ê¹â,ÒôÀÖÂÉ¶¯
                 if(params[0]&0x01)
                 {
                     app_light_ctrl_data_switch_set(params[1]);
@@ -81,7 +81,7 @@ void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len){
                 app_light_ctrl_proc();
             }
             break;
-        case CMD_TY_UART_FEA_SERVER_COUNTDOWN:{  //å€’è®¡æ—¶ 
+        case CMD_TY_UART_FEA_SERVER_COUNTDOWN:{  //µ¹¼ÆÊ± 
                 u32 Countdown_time=0;
                 Countdown_time = params[0];
                 Countdown_time = (Countdown_time<<8) + params[1];
@@ -90,7 +90,7 @@ void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len){
                 app_light_ctrl_data_countdown_set(Countdown_time);
             }
             break;
-        case CMD_TY_UART_FEA_SERVER_RESET_BT:{  //é‡ç½® BT 
+        case CMD_TY_UART_FEA_SERVER_RESET_BT:{  //ÖØÖÃ BT 
                if(0x01 == params[0])
                {
                    kick_out();
@@ -98,7 +98,7 @@ void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len){
             }
             break;
         case CMD_TY_UART_FEA_SERVER_COMPLETE_SCENE:
-        case CMD_TY_UART_FEA_SERVER_SCENE_ID:{  //åœºæ™¯å·æ§åˆ¶ 
+        case CMD_TY_UART_FEA_SERVER_SCENE_ID:{  //³¡¾°ºÅ¿ØÖÆ 
                 if(SCENE_MODE!=app_light_ctrl_data_mode_get_value()){
                     app_light_ctrl_data_mode_set(SCENE_MODE);
                 }
@@ -121,9 +121,9 @@ void app_mesh_uart_ctl(u8 fur, u8 *params, u8 len){
                 if(opRet == 0)
                 {
                     u8 temp_flg = ty_uart_cmd_server_get_txtomcu_flag();
-                    ty_uart_cmd_server_set_txtomcu_flag(0);//MCUæ§åˆ¶åœºæ™¯ï¼Œä¸éœ€è¦äº¤äº’ä¸‹å‘
+                    ty_uart_cmd_server_set_txtomcu_flag(0);//MCU¿ØÖÆ³¡¾°£¬²»ĞèÒª½»»¥ÏÂ·¢
                     ty_light_scene_cmd_data_set(&par[4],par[3]);
-                    ty_uart_cmd_server_set_txtomcu_flag(temp_flg);//è¿˜åŸä¹‹å‰çš„äº¤äº’æ–¹å¼
+                    ty_uart_cmd_server_set_txtomcu_flag(temp_flg);///»¹Ô­Ö®Ç°µÄ½»»¥·½Ê½
                     app_light_ctrl_data_auto_save_start(APP_DATA_AUTO_SAVE_DELAY_TIME); //APP_DATA_AUTO_SAVE_DELAY_TIME 5000    
                 }           
             }

@@ -26,12 +26,13 @@
 
 
 //=========================ÉêÃ÷=================================
-void lutec_xm_data(void);
+void lutec_wifimodule_thread(void);
 
+void lutec_wifimodule_data(void);
 
+void lutec_protocol_wifimodul_data(uint8_t *data_ptr, uint8_t data_len);
 
-
-
+void lutec_updata_by_wifi(uint8_t *data_ptr, uint8_t data_len);
 
 
 #endif

@@ -47,7 +47,7 @@ static void app_uart_server_run(void);
 * @description: Additive data for check
 * @param {u8 *data} data
 * @param {u8 len} length
-*Â @return: sum -> 8 bits reserved
+* @return: sum -> 8 bits reserved
 **/
 inline static u8 app_uart_check_sum(u8 *data,u8 len){
     u8 i,sum = 0;
@@ -68,7 +68,7 @@ inline static u8 app_uart_check_sum(u8 *data,u8 len){
 /**
 * @description: uart not init
 * @param {none}
-*Â @return: none
+* @return: none
 **/
 void app_uart_deinit(void){
 //    uart_init_flg = 0;
@@ -77,7 +77,7 @@ void app_uart_deinit(void){
 /**
 * @description: uart init
 * @param {none}
-*Â @return: none
+* @return: none
 **/
 void app_uart_init(void){
 //    uart_init_flg = 1;
@@ -101,7 +101,7 @@ void app_uart_init(void){
     app_factory_test_init();
 
 #if LIGHT_CFG_UART_ENABLE
-    // //åˆå§‹åŒ–MESH ç¯ä¸²å£å¯¹æŽ¥
+    //³õÊ¼»¯MESH µÆ´®¿Ú¶Ô½Ó
     ty_uart_cmd_server.init(&ty_uart_cmd_server_params);
     ty_uart_cmd_server.set_uart_ctl_callback(&app_mesh_uart_ctl);
 
@@ -121,13 +121,14 @@ void app_uart_init(void){
 /**
 * @description: uart run in a loop, handle uart data
 * @param {none}
-*Â @return: none
+* @return: none
 **/
 void app_uart_run(void){
     u8 buf[254];
     int len = hal_uart_read(buf,254);
 
-    if(len > 0){
+    if(len > 0)
+    {
         ty_fifo_add(buf,len);
         PR_DEBUG("%-30s","RECEIVE RAW DATA:");
         for(u8 i=0;i<len;i++){
@@ -136,25 +137,28 @@ void app_uart_run(void){
         PR_DEBUG_RAW("\n");
     }
 
+    //--------------------------------20210115 wwpc
+    #if 0
     app_factory_test_run();
 #if LIGHT_CFG_UART_ENABLE
     static u8 work_state = 0;
-    //ç¯ä¸²å£ä¸ŠæŠ¥åœ¨ç¦»ç½‘çŠ¶æ€
-    if(work_state != is_provision_success()){//meshçŠ¶æ€æ”¹å˜
+    //µÆ´®¿ÚÉÏ±¨ÔÚÀëÍø×´Ì¬
+    if(work_state != is_provision_success()){//mesh×´Ì¬¸Ä±ä
         work_state = is_provision_success();
         app_mesh_uart_write(CMD_TY_UART_FEA_SERVER_MESH_STA,&work_state,1); 
     }
 #endif
+    #endif
     //--------------------------------20210105 wwpc
-    //app_uart_server_run();//è§£æžFIFOä¸­çš„æ•°æ®ï¼Œå¹¶è°ƒç”¨ç›¸åº”çš„å¤„ç†å‡½æ•°
-    lutec_xm_data();//è§£æžä¸²å£æ•°æ®
+    //app_uart_server_run();//½âÎöFIFOÖÐµÄÊý¾Ý£¬²¢µ÷ÓÃÏàÓ¦µÄ´¦Àíº¯Êý
+    lutec_wifimodule_data();//½âÎö´®¿ÚÊý¾Ý
 }
 
 
 /**
 * @description: run in a loop, handle uart data
 * @param {none}
-*Â @return: none
+* @return: none
 **/
 static void app_uart_server_run(void){
     static u8 is_factory = 1;
@@ -171,18 +175,17 @@ static void app_uart_server_run(void){
         return;
     }
 
-
     u8 head = buf[F_HEAD1];
     u8 cmd = buf[F_CMD];
     u8 len = 0, total_len = 0;
-    if(head == 0xa5){                    //mesh light
+    if(head == 0xa5){                   //mesh light
         len = buf[UART_F_LEN2];
         total_len = len + UART_F_MIN_LEN;
     }else if(head == 0x66){             //2.judge if it's a whole frame
         len = buf[F_LEN2];
         total_len = len + F_MIN_LEN;
 
-        if(len > F_MAX_LEN){                    //error frame,the max frame data len is pid+version=39
+        if(len > F_MAX_LEN){            //error frame,the max frame data len is pid+version=39
             ty_fifo_pop(3);
             return;
         }

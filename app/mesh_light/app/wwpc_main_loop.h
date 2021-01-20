@@ -27,13 +27,17 @@
 
 
 //=========================ÉêÃ÷=================================
+void lutec_main_init(void);
+
 void lutec_main_loop(void);
+
+void lutec_mesh_state_callback(mesh_state_t stat);
 
 void lutec_save_data_setvariable(LIGHT_CUST_DATA_FLASH_T *tSaveCustData);
 
 void lutec_read_data_setvariable(LIGHT_CUST_DATA_FLASH_T tReadCustData);
 
-
+void lutec_send_group_sddr(void);
 
 #endif
 /*************************************File end********************************************/

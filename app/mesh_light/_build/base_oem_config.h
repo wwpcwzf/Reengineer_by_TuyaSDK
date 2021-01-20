@@ -3,7 +3,7 @@
 //-------------------------------------------
 #define     FW_VERSION                "9.7"
 #define     FW_VERSION_HEX            0x3739
-#define     BUILD_TIME                "2021-01-12-20:03:47"
+#define     BUILD_TIME                "2021-01-20-16:42:48"
 #define     BUILD_FIRMNAME            "oem_tlsr8250_lightcfg_pwm_ty"
 #define     MESH_PID                  "keyd9k4q"
 #define     CONFIG_LOG_ON             0
